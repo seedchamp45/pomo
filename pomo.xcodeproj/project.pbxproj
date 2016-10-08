@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */; };
 		F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A921DA8D67100A663D9 /* AppDelegate.swift */; };
 		F15B7A951DA8D67100A663D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A941DA8D67100A663D9 /* ViewController.swift */; };
 		F15B7A981DA8D67100A663D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B7A961DA8D67100A663D9 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.release.xcconfig"; sourceTree = "<group>"; };
+		CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.debug.xcconfig"; sourceTree = "<group>"; };
 		F15B7A8F1DA8D67100A663D9 /* pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B7A921DA8D67100A663D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F15B7A941DA8D67100A663D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		F15B7AB11DA8D67100A663D9 /* pomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B7AB51DA8D67100A663D9 /* pomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomoUITests.swift; sourceTree = "<group>"; };
 		F15B7AB71DA8D67100A663D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FB4EAA36654000E1DB372A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */,
+				11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		186C26829FBC008FE81A0612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F15B7A861DA8D67000A663D9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				F15B7AA91DA8D67100A663D9 /* pomoTests */,
 				F15B7AB41DA8D67100A663D9 /* pomoUITests */,
 				F15B7A901DA8D67100A663D9 /* Products */,
+				15FB4EAA36654000E1DB372A /* Pods */,
+				186C26829FBC008FE81A0612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F15B7ABA1DA8D67100A663D9 /* Build configuration list for PBXNativeTarget "pomo" */;
 			buildPhases = (
+				D6823DC43A336406B8F27341 /* [CP] Check Pods Manifest.lock */,
 				F15B7A8B1DA8D67100A663D9 /* Sources */,
 				F15B7A8C1DA8D67100A663D9 /* Frameworks */,
 				F15B7A8D1DA8D67100A663D9 /* Resources */,
+				D9FB78E069CCE747BB0969B3 /* [CP] Embed Pods Frameworks */,
+				56C36AE873C1B986B0F2A93A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56C36AE873C1B986B0F2A93A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pomo/Pods-pomo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6823DC43A336406B8F27341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FB78E069CCE747BB0969B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pomo/Pods-pomo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F15B7A8B1DA8D67100A663D9 /* Sources */ = {
@@ -403,6 +478,7 @@
 		};
 		F15B7ABB1DA8D67100A663D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pomo/Info.plist;
@@ -414,6 +490,7 @@
 		};
 		F15B7ABC1DA8D67100A663D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pomo/Info.plist;
@@ -488,6 +565,7 @@
 				F15B7ABC1DA8D67100A663D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F15B7ABD1DA8D67100A663D9 /* Build configuration list for PBXNativeTarget "pomoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +574,7 @@
 				F15B7ABF1DA8D67100A663D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F15B7AC01DA8D67100A663D9 /* Build configuration list for PBXNativeTarget "pomoUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +583,7 @@
 				F15B7AC21DA8D67100A663D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
