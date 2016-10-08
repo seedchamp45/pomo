@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  startViewController.swift
 //  pomo
 //
 //  Created by Thanawith Munkatitum on 10/8/2559 BE.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class startViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -22,4 +22,3 @@ class ViewController: UIViewController {
 
 
 }
-

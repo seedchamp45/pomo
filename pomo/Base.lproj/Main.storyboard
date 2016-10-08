@@ -1,25 +1,238 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="startViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="laV-OR-Q8q">
+            <objects>
+                <viewController id="2sA-sd-cnD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yFi-2e-qyE"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXI-bA-7VB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VTj-t9-hbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nyz-hm-Ahz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbs-IP-sNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236.5" y="-403.5"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="qC1-hr-Hem">
+            <objects>
+                <viewController id="Rmb-Ak-1cG" customClass="RegisterViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9FM-sp-28y"/>
+                        <viewControllerLayoutGuide type="bottom" id="NoY-zA-ofT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4v1-bq-BxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWD-jL-5cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652.5" y="-403.5"/>
+        </scene>
+        <!--Enter Password View Controller-->
+        <scene sceneID="KSB-1H-dr3">
+            <objects>
+                <viewController id="5yh-Zm-OnL" customClass="enterPasswordViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Awl-Zz-w1q"/>
+                        <viewControllerLayoutGuide type="bottom" id="fx7-D1-gEd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GeH-Dy-hnR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hea-R1-akl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.5" y="-403.5"/>
+        </scene>
+        <!--Enter Password View Controller-->
+        <scene sceneID="8xf-Ig-9Yi">
+            <objects>
+                <viewController id="QnX-0H-I35" customClass="enterPasswordViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RAK-ie-RJE"/>
+                        <viewControllerLayoutGuide type="bottom" id="u9y-hW-178"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jt8-rr-c5s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6c-pQ-Mb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490.5" y="-403.5"/>
+        </scene>
+        <!--Addwatch View Controller-->
+        <scene sceneID="8II-U0-r8i">
+            <objects>
+                <viewController id="Ck6-c3-jtr" customClass="addwatchViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NSr-Or-4B4"/>
+                        <viewControllerLayoutGuide type="bottom" id="RtK-y7-nWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MCG-eJ-LeN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZC-q7-oBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915.5" y="-403.5"/>
+        </scene>
+        <!--Addwatch View Controller-->
+        <scene sceneID="umN-YN-cmg">
+            <objects>
+                <viewController id="W3C-eZ-hbv" customClass="addwatchViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gTc-fn-2Fp"/>
+                        <viewControllerLayoutGuide type="bottom" id="kF4-IW-Ipm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbI-5T-1ty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzZ-iQ-ehq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3335.5" y="-403.5"/>
+        </scene>
+        <!--Second Add Watch View Controller-->
+        <scene sceneID="sfp-O2-sz4">
+            <objects>
+                <viewController id="8ax-sB-GPe" customClass="secondAddWatchViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lm1-wL-4cm"/>
+                        <viewControllerLayoutGuide type="bottom" id="568-h1-euU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lB5-eu-2ML">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRI-0Y-evx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3742.5" y="-403.5"/>
+        </scene>
+        <!--Kid Watch Profile View Controller-->
+        <scene sceneID="ges-3M-XxI">
+            <objects>
+                <viewController id="abY-qu-5uW" customClass="KidWatchProfileViewController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bif-hN-U7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="Klo-XK-rPo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFs-ZH-Qpx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPP-9I-j2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4163.5" y="-403.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gVz-Ql-Fog">
+            <objects>
+                <viewController id="2e9-R1-als" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yXJ-TT-yxn"/>
+                        <viewControllerLayoutGuide type="bottom" id="fSn-xE-e3e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSJ-hc-cEg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qOa-bk-1Gh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDi-Dx-eW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236.5" y="1156.5"/>
+        </scene>
+        <!--Master Navigation Controller-->
+        <scene sceneID="Tqd-fF-Eh8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dBq-gy-O2w" customClass="MasterNavigationController" customModule="pomo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bh7-b7-por">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2e9-R1-als" kind="relationship" relationship="rootViewController" id="da7-xV-aVI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2a-y8-1TU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793.5" y="1168.5"/>
+        </scene>
+        <!--Login Navigation Controller-->
+        <scene sceneID="8ER-oM-Ag7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9xd-5c-Ds1" customClass="LoginNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5b5-xR-B5v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2sA-sd-cnD" kind="relationship" relationship="rootViewController" id="8fA-Tl-QHs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ck-wL-ECn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793.5" y="-409.5"/>
         </scene>
     </scenes>
 </document>

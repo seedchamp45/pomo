@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */; };
+		F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EA41DA8F9CE00C5EBA2 /* BaseDataController.swift */; };
+		F14B3EA71DA8FB1D00C5EBA2 /* SingletonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EA61DA8FB1D00C5EBA2 /* SingletonProtocol.swift */; };
+		F14B3EA91DA8FF2100C5EBA2 /* SingletonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EA81DA8FF2100C5EBA2 /* SingletonFactory.swift */; };
+		F14B3EAC1DA90F3900C5EBA2 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EAB1DA90F3900C5EBA2 /* startViewController.swift */; };
+		F14B3EAE1DA90FBB00C5EBA2 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EAD1DA90FBB00C5EBA2 /* MasterNavigationController.swift */; };
+		F14B3EB21DA9115B00C5EBA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EB11DA9115B00C5EBA2 /* LoginViewController.swift */; };
+		F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EB41DA9123200C5EBA2 /* RegisterViewController.swift */; };
+		F14B3EB71DA912B100C5EBA2 /* enterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EB61DA912B100C5EBA2 /* enterPasswordViewController.swift */; };
+		F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EB81DA91DC700C5EBA2 /* addwatchViewController.swift */; };
+		F14B3EBB1DA9224200C5EBA2 /* secondAddWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBA1DA9224200C5EBA2 /* secondAddWatchViewController.swift */; };
+		F14B3EBD1DA9229200C5EBA2 /* KidWatchProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBC1DA9229200C5EBA2 /* KidWatchProfileViewController.swift */; };
 		F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A921DA8D67100A663D9 /* AppDelegate.swift */; };
-		F15B7A951DA8D67100A663D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A941DA8D67100A663D9 /* ViewController.swift */; };
 		F15B7A981DA8D67100A663D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B7A961DA8D67100A663D9 /* Main.storyboard */; };
 		F15B7A9B1DA8D67100A663D9 /* pomo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A991DA8D67100A663D9 /* pomo.xcdatamodeld */; };
 		F15B7A9D1DA8D67100A663D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15B7A9C1DA8D67100A663D9 /* Assets.xcassets */; };
@@ -38,9 +48,21 @@
 /* Begin PBXFileReference section */
 		11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.release.xcconfig"; sourceTree = "<group>"; };
 		CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.debug.xcconfig"; sourceTree = "<group>"; };
+		F14B3EA31DA8F60D00C5EBA2 /* pomo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pomo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F14B3EA41DA8F9CE00C5EBA2 /* BaseDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataController.swift; sourceTree = "<group>"; };
+		F14B3EA61DA8FB1D00C5EBA2 /* SingletonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonProtocol.swift; sourceTree = "<group>"; };
+		F14B3EA81DA8FF2100C5EBA2 /* SingletonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonFactory.swift; sourceTree = "<group>"; };
+		F14B3EAB1DA90F3900C5EBA2 /* startViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		F14B3EAD1DA90FBB00C5EBA2 /* MasterNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
+		F14B3EB01DA9111400C5EBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/LoginNavigationController.swift; sourceTree = "<group>"; };
+		F14B3EB11DA9115B00C5EBA2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F14B3EB41DA9123200C5EBA2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F14B3EB61DA912B100C5EBA2 /* enterPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enterPasswordViewController.swift; sourceTree = "<group>"; };
+		F14B3EB81DA91DC700C5EBA2 /* addwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addwatchViewController.swift; sourceTree = "<group>"; };
+		F14B3EBA1DA9224200C5EBA2 /* secondAddWatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondAddWatchViewController.swift; sourceTree = "<group>"; };
+		F14B3EBC1DA9229200C5EBA2 /* KidWatchProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidWatchProfileViewController.swift; sourceTree = "<group>"; };
 		F15B7A8F1DA8D67100A663D9 /* pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B7A921DA8D67100A663D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F15B7A941DA8D67100A663D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F15B7A971DA8D67100A663D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F15B7A9A1DA8D67100A663D9 /* pomo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pomo.xcdatamodel; sourceTree = "<group>"; };
 		F15B7A9C1DA8D67100A663D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +120,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F14B3EAA1DA903C200C5EBA2 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F14B3EA41DA8F9CE00C5EBA2 /* BaseDataController.swift */,
+				F14B3EA81DA8FF2100C5EBA2 /* SingletonFactory.swift */,
+				F14B3EA61DA8FB1D00C5EBA2 /* SingletonProtocol.swift */,
+			);
+			name = BaseClasses;
+			sourceTree = "<group>";
+		};
+		F14B3EB31DA9116500C5EBA2 /* loginClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F14B3EB11DA9115B00C5EBA2 /* LoginViewController.swift */,
+				F14B3EAF1DA9111400C5EBA2 /* LoginNavigationController.swift */,
+				F14B3EB41DA9123200C5EBA2 /* RegisterViewController.swift */,
+				F14B3EB61DA912B100C5EBA2 /* enterPasswordViewController.swift */,
+				F14B3EB81DA91DC700C5EBA2 /* addwatchViewController.swift */,
+				F14B3EBA1DA9224200C5EBA2 /* secondAddWatchViewController.swift */,
+				F14B3EBC1DA9229200C5EBA2 /* KidWatchProfileViewController.swift */,
+			);
+			name = loginClasses;
+			sourceTree = "<group>";
+		};
 		F15B7A861DA8D67000A663D9 = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +170,16 @@
 			isa = PBXGroup;
 			children = (
 				F15B7A921DA8D67100A663D9 /* AppDelegate.swift */,
-				F15B7A941DA8D67100A663D9 /* ViewController.swift */,
 				F15B7A961DA8D67100A663D9 /* Main.storyboard */,
-				F15B7A9C1DA8D67100A663D9 /* Assets.xcassets */,
+				F14B3EB31DA9116500C5EBA2 /* loginClasses */,
+				F14B3EAA1DA903C200C5EBA2 /* BaseClasses */,
+				F14B3EAD1DA90FBB00C5EBA2 /* MasterNavigationController.swift */,
+				F14B3EAB1DA90F3900C5EBA2 /* startViewController.swift */,
 				F15B7A9E1DA8D67100A663D9 /* LaunchScreen.storyboard */,
+				F15B7A9C1DA8D67100A663D9 /* Assets.xcassets */,
 				F15B7AA11DA8D67100A663D9 /* Info.plist */,
 				F15B7A991DA8D67100A663D9 /* pomo.xcdatamodeld */,
+				F14B3EA31DA8F60D00C5EBA2 /* pomo-Bridging-Header.h */,
 			);
 			path = pomo;
 			sourceTree = "<group>";
@@ -334,8 +384,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14B3EBB1DA9224200C5EBA2 /* secondAddWatchViewController.swift in Sources */,
+				F14B3EBD1DA9229200C5EBA2 /* KidWatchProfileViewController.swift in Sources */,
+				F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */,
+				F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */,
+				F14B3EAC1DA90F3900C5EBA2 /* startViewController.swift in Sources */,
 				F15B7A9B1DA8D67100A663D9 /* pomo.xcdatamodeld in Sources */,
-				F15B7A951DA8D67100A663D9 /* ViewController.swift in Sources */,
+				F14B3EB71DA912B100C5EBA2 /* enterPasswordViewController.swift in Sources */,
+				F14B3EA71DA8FB1D00C5EBA2 /* SingletonProtocol.swift in Sources */,
+				F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */,
+				F14B3EB21DA9115B00C5EBA2 /* LoginViewController.swift in Sources */,
+				F14B3EAE1DA90FBB00C5EBA2 /* MasterNavigationController.swift in Sources */,
+				F14B3EA91DA8FF2100C5EBA2 /* SingletonFactory.swift in Sources */,
 				F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +432,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F14B3EAF1DA9111400C5EBA2 /* LoginNavigationController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F14B3EB01DA9111400C5EBA2 /* Base */,
+			);
+			name = LoginNavigationController.swift;
+			sourceTree = "<group>";
+		};
 		F15B7A961DA8D67100A663D9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -485,6 +553,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -497,6 +567,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
 			};
 			name = Release;
 		};
