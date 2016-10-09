@@ -19,6 +19,18 @@
 		F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EB81DA91DC700C5EBA2 /* addwatchViewController.swift */; };
 		F14B3EBB1DA9224200C5EBA2 /* secondAddWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBA1DA9224200C5EBA2 /* secondAddWatchViewController.swift */; };
 		F14B3EBD1DA9229200C5EBA2 /* KidWatchProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBC1DA9229200C5EBA2 /* KidWatchProfileViewController.swift */; };
+		F14B3EBF1DA9260100C5EBA2 /* locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */; };
+		F14B3EC21DA926A400C5EBA2 /* familyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC11DA926A400C5EBA2 /* familyViewController.swift */; };
+		F14B3EC41DA9279400C5EBA2 /* familyAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */; };
+		F14B3EC61DA9293100C5EBA2 /* addFamilyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */; };
+		F14B3EC81DA92CA600C5EBA2 /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */; };
+		F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */; };
+		F14B3ECC1DA935BC00C5EBA2 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */; };
+		F14B3ECE1DA935EB00C5EBA2 /* addSafeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */; };
+		F14B3ED01DA9386600C5EBA2 /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ECF1DA9386600C5EBA2 /* GroupChatViewController.swift */; };
+		F14B3ED21DA938CF00C5EBA2 /* friendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ED11DA938CF00C5EBA2 /* friendViewController.swift */; };
+		F14B3ED41DA9454800C5EBA2 /* editFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ED31DA9454800C5EBA2 /* editFriendViewController.swift */; };
+		F14B3ED61DA945CF00C5EBA2 /* choosePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ED51DA945CF00C5EBA2 /* choosePictureViewController.swift */; };
 		F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A921DA8D67100A663D9 /* AppDelegate.swift */; };
 		F15B7A981DA8D67100A663D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B7A961DA8D67100A663D9 /* Main.storyboard */; };
 		F15B7A9B1DA8D67100A663D9 /* pomo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F15B7A991DA8D67100A663D9 /* pomo.xcdatamodeld */; };
@@ -61,6 +73,18 @@
 		F14B3EB81DA91DC700C5EBA2 /* addwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addwatchViewController.swift; sourceTree = "<group>"; };
 		F14B3EBA1DA9224200C5EBA2 /* secondAddWatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondAddWatchViewController.swift; sourceTree = "<group>"; };
 		F14B3EBC1DA9229200C5EBA2 /* KidWatchProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidWatchProfileViewController.swift; sourceTree = "<group>"; };
+		F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationViewController.swift; sourceTree = "<group>"; };
+		F14B3EC11DA926A400C5EBA2 /* familyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = familyViewController.swift; sourceTree = "<group>"; };
+		F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = familyAdminViewController.swift; sourceTree = "<group>"; };
+		F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addFamilyAccountViewController.swift; sourceTree = "<group>"; };
+		F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
+		F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = safeZoneViewController.swift; sourceTree = "<group>"; };
+		F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
+		F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSafeZoneViewController.swift; sourceTree = "<group>"; };
+		F14B3ECF1DA9386600C5EBA2 /* GroupChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
+		F14B3ED11DA938CF00C5EBA2 /* friendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendViewController.swift; sourceTree = "<group>"; };
+		F14B3ED31DA9454800C5EBA2 /* editFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editFriendViewController.swift; sourceTree = "<group>"; };
+		F14B3ED51DA945CF00C5EBA2 /* choosePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = choosePictureViewController.swift; sourceTree = "<group>"; };
 		F15B7A8F1DA8D67100A663D9 /* pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15B7A921DA8D67100A663D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F15B7A971DA8D67100A663D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +168,25 @@
 			name = loginClasses;
 			sourceTree = "<group>";
 		};
+		F14B3EC01DA9260800C5EBA2 /* HomeClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */,
+				F14B3EC11DA926A400C5EBA2 /* familyViewController.swift */,
+				F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */,
+				F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */,
+				F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */,
+				F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */,
+				F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */,
+				F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */,
+				F14B3ECF1DA9386600C5EBA2 /* GroupChatViewController.swift */,
+				F14B3ED11DA938CF00C5EBA2 /* friendViewController.swift */,
+				F14B3ED31DA9454800C5EBA2 /* editFriendViewController.swift */,
+				F14B3ED51DA945CF00C5EBA2 /* choosePictureViewController.swift */,
+			);
+			name = HomeClasses;
+			sourceTree = "<group>";
+		};
 		F15B7A861DA8D67000A663D9 = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +216,9 @@
 				F15B7A961DA8D67100A663D9 /* Main.storyboard */,
 				F14B3EB31DA9116500C5EBA2 /* loginClasses */,
 				F14B3EAA1DA903C200C5EBA2 /* BaseClasses */,
-				F14B3EAD1DA90FBB00C5EBA2 /* MasterNavigationController.swift */,
+				F14B3EC01DA9260800C5EBA2 /* HomeClasses */,
 				F14B3EAB1DA90F3900C5EBA2 /* startViewController.swift */,
+				F14B3EAD1DA90FBB00C5EBA2 /* MasterNavigationController.swift */,
 				F15B7A9E1DA8D67100A663D9 /* LaunchScreen.storyboard */,
 				F15B7A9C1DA8D67100A663D9 /* Assets.xcassets */,
 				F15B7AA11DA8D67100A663D9 /* Info.plist */,
@@ -385,18 +429,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14B3EBB1DA9224200C5EBA2 /* secondAddWatchViewController.swift in Sources */,
+				F14B3ED21DA938CF00C5EBA2 /* friendViewController.swift in Sources */,
 				F14B3EBD1DA9229200C5EBA2 /* KidWatchProfileViewController.swift in Sources */,
+				F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */,
 				F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */,
 				F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */,
+				F14B3EC81DA92CA600C5EBA2 /* messageViewController.swift in Sources */,
+				F14B3EC41DA9279400C5EBA2 /* familyAdminViewController.swift in Sources */,
 				F14B3EAC1DA90F3900C5EBA2 /* startViewController.swift in Sources */,
+				F14B3EC21DA926A400C5EBA2 /* familyViewController.swift in Sources */,
 				F15B7A9B1DA8D67100A663D9 /* pomo.xcdatamodeld in Sources */,
+				F14B3ED01DA9386600C5EBA2 /* GroupChatViewController.swift in Sources */,
 				F14B3EB71DA912B100C5EBA2 /* enterPasswordViewController.swift in Sources */,
 				F14B3EA71DA8FB1D00C5EBA2 /* SingletonProtocol.swift in Sources */,
+				F14B3ED41DA9454800C5EBA2 /* editFriendViewController.swift in Sources */,
 				F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */,
 				F14B3EB21DA9115B00C5EBA2 /* LoginViewController.swift in Sources */,
 				F14B3EAE1DA90FBB00C5EBA2 /* MasterNavigationController.swift in Sources */,
+				F14B3ED61DA945CF00C5EBA2 /* choosePictureViewController.swift in Sources */,
+				F14B3EC61DA9293100C5EBA2 /* addFamilyAccountViewController.swift in Sources */,
+				F14B3ECE1DA935EB00C5EBA2 /* addSafeZoneViewController.swift in Sources */,
+				F14B3EBF1DA9260100C5EBA2 /* locationViewController.swift in Sources */,
 				F14B3EA91DA8FF2100C5EBA2 /* SingletonFactory.swift in Sources */,
 				F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */,
+				F14B3ECC1DA935BC00C5EBA2 /* historyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
