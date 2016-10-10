@@ -20,22 +20,47 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.16.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.16.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.16.0):
+    - FBSDKCoreKit
   - FLKAutoLayout (0.2.1)
   - ORStackView (3.0.1):
     - FLKAutoLayout (~> 0.2)
+  - SmileLock (1.2.1)
+  - SwiftQRCode (2.0.2)
   - SwiftyJSON (2.4.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
   - ORStackView (~> 3.0)
+  - SmileLock (~> 1.0)
+  - SwiftQRCode
   - SwiftyJSON (~> 2.3)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
+  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
+  FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
   FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
   ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
+  SmileLock: 748bc15066337721fa655f4cf3184919b7f0c40a
+  SwiftQRCode: 68e920781686e376d70646b90c8ad87fd6523309
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
 
-PODFILE CHECKSUM: f33ff0a9e46f72e0c804167b1bb7b19ee0503a1f
+PODFILE CHECKSUM: 7546bd09264933b62566a3f306831a2ca0802dad
 
 COCOAPODS: 1.0.1

@@ -10,4 +10,9 @@ import UIKit
 
 class addwatchViewController: UIViewController {
 
+    @IBAction func Skip(sender: UIButton) {
+        let vc:MasterNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("MasterNavigationController") as! MasterNavigationController
+        self.presentViewController(vc, animated: true, completion: nil)
+        print("eiei")
+    }
 }

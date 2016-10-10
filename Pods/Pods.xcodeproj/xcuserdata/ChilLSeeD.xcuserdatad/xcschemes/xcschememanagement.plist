@@ -9,6 +9,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FLKAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +44,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SmileLock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftQRCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +62,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30D7FCF8072F5D59AE1C98D94F9A6EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36E22300050AE77F1DFCD85C216BADBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>455BFF0D0B2B20647C75FCC77480930C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4878C70B21CA37D7CB8A476BF986741B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D0803BBAAA6F8EA3A3E9788DD8B93FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6EDC37F3FA92533C6AC3562458AA91F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE31AAA33B4653BD3CB9C1C48B6D1924</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C6CEE7BEADAD8E11590F1C4ACF7C4BCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4063F4E1F1E67BC8C108EC4BD91B8C3</key>
+		<key>F4172977B5CD76BDE8433A0D9AEF5C6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

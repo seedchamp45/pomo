@@ -6,7 +6,7 @@
 //  Copyright © 2559 Kittipol Munkatitum. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class addSafeZoneViewController: UIViewController {
 
