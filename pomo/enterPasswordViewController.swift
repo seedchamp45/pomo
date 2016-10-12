@@ -10,23 +10,23 @@ import UIKit
 
 class enterPasswordViewController: UIViewController {
     
-    @IBAction func Next(sender: UIButton) {
+    @IBAction func Next(_ sender: UIButton) {
         // create the alert
-        let alert = UIAlertController(title: "User Agreement", message: "Do you read and agree that User Agregment", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let alert = UIAlertController(title: "User Agreement", message: "Do you read and agree that User Agregment", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         // add the actions (buttons)
-        let OKAction = UIAlertAction(title: "OK", style: .Default){
+        let OKAction = UIAlertAction(title: "OK", style: .default){
             (action) in
-            let vc: addwatchViewController = self.storyboard?.instantiateViewControllerWithIdentifier("addwatchViewController") as! addwatchViewController
+            let vc: addwatchViewController = self.storyboard?.instantiateViewController(withIdentifier: "addwatchViewController") as! addwatchViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
         alert.addAction(OKAction)
         
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
         
         // show the alert
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
 

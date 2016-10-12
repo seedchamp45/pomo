@@ -22,19 +22,19 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
         self.pageTitles = NSArray(objects: "Tutorial Page 1/2", "Tutorial Page 2/2")
         self.pageImages = NSArray(objects: "page1", "page2")
         
-        self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
+        self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as! UIPageViewController
         self.pageViewController.dataSource = self
         
         let startVC = self.viewControllerAtIndex(0) as ContentViewController
         let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: true, completion: nil)
         
-        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
+        self.pageViewController.view.frame = CGRect(x: 0, y: 30, width: self.view.frame.width, height: self.view.frame.size.height - 60)
        // self.restartButton.hidden = true
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
-        self.pageViewController.didMoveToParentViewController(self)
+        self.pageViewController.didMove(toParentViewController: self)
         
         
     }
@@ -45,15 +45,15 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
     }
     
     @IBOutlet weak var restartButton: UIButton!
-    @IBAction func restartAction(sender: AnyObject)
+    @IBAction func restartAction(_ sender: AnyObject)
     {
         let startVC = self.viewControllerAtIndex(0) as ContentViewController
         let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .Forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: true, completion: nil)
     }
     
-    func viewControllerAtIndex(index: Int) -> ContentViewController
+    func viewControllerAtIndex(_ index: Int) -> ContentViewController
     {
         if ((self.pageTitles.count == 0) || (index >= self.pageTitles.count)) {
             return ContentViewController()
@@ -62,7 +62,7 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
     
         
         
-        let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
+        let vc: ContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
         
         vc.imageFile = self.pageImages[index] as! String
         vc.titleText = self.pageTitles[index] as! String
@@ -76,7 +76,7 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
     
     // MARK: - Page View Controller Data Source
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         
         let vc = viewController as! ContentViewController
@@ -95,7 +95,7 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
         
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         let vc = viewController as! ContentViewController
         var index = vc.pageIndex as Int
@@ -118,14 +118,14 @@ class startViewController: UIViewController,UIPageViewControllerDataSource {
         
     }
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
+    func presentationCount(for pageViewController: UIPageViewController) -> Int
     {
         
 
         return self.pageTitles.count
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int
     {
         return 0
     }

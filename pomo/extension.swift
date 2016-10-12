@@ -15,26 +15,26 @@ enum ColorType: String {
 
 extension UIColor {
     
-    class func hexStr(hexStr: String) -> UIColor {
+    class func hexStr(_ hexStr: String) -> UIColor {
         return UIColor.hexStr(hexStr, alpha: 1)
     }
     
-    class func color(hexColor: ColorType) -> UIColor {
+    class func color(_ hexColor: ColorType) -> UIColor {
         return UIColor.hexStr(hexColor.rawValue, alpha: 1.0)
     }
     
-    class func hexStr(str: String, alpha: CGFloat) -> UIColor {
-        let hexStr = str.stringByReplacingOccurrencesOfString("#", withString: "")
-        let scanner = NSScanner(string: hexStr)
+    class func hexStr(_ str: String, alpha: CGFloat) -> UIColor {
+        let hexStr = str.replacingOccurrences(of: "#", with: "")
+        let scanner = Scanner(string: hexStr)
         var color: UInt32 = 0
-        if scanner.scanHexInt(&color) {
+        if scanner.scanHexInt32(&color) {
             let r = CGFloat((color & 0xFF0000) >> 16) / 255.0
             let g = CGFloat((color & 0x00FF00) >> 8) / 255.0
             let b = CGFloat(color & 0x0000FF) / 255.0
             return UIColor(red: r, green: g, blue: b , alpha: alpha)
         } else {
             print("Invalid hex string")
-            return UIColor.whiteColor()
+            return UIColor.white
         }
     }
     

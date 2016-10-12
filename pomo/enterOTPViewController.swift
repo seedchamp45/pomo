@@ -32,7 +32,7 @@ class enterOTPViewController: UIViewController {
 }
 
 extension enterOTPViewController: PasswordInputCompleteProtocol {
-    func passwordInputComplete(passwordContainerView: PasswordContainerView, input: String) {
+    func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String) {
         if validation(input) {
             validationSuccess()
         } else {
@@ -40,7 +40,7 @@ extension enterOTPViewController: PasswordInputCompleteProtocol {
         }
     }
     
-    func touchAuthenticationComplete(passwordContainerView: PasswordContainerView, success: Bool, error: NSError?) {
+    func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: NSError?) {
         if success {
             self.validationSuccess()
         } else {
@@ -50,13 +50,13 @@ extension enterOTPViewController: PasswordInputCompleteProtocol {
 }
 
 private extension enterOTPViewController {
-    func validation(input: String) -> Bool {
+    func validation(_ input: String) -> Bool {
         return input == "123456"
     }
     
     func validationSuccess() {
         print("*️⃣ success!")
-        let vc: enterPasswordViewController = self.storyboard?.instantiateViewControllerWithIdentifier("enterPasswordViewController") as! enterPasswordViewController
+        let vc: enterPasswordViewController = self.storyboard?.instantiateViewController(withIdentifier: "enterPasswordViewController") as! enterPasswordViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

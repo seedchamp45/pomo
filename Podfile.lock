@@ -20,7 +20,6 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - AlarmKit (0.0.1)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -45,11 +44,9 @@ PODS:
   - ORStackView (3.0.1):
     - FLKAutoLayout (~> 0.2)
   - SmileLock (1.2.1)
-  - SwiftyJSON (2.4.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
-  - AlarmKit
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -58,7 +55,6 @@ DEPENDENCIES:
   - JSQMessagesViewController (from `https://github.com/jessesquires/JSQMessagesViewController.git`, branch `develop`)
   - ORStackView (~> 3.0)
   - SmileLock (~> 1.0)
-  - SwiftyJSON (~> 2.3)
 
 EXTERNAL SOURCES:
   JSQMessagesViewController:
@@ -72,7 +68,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  AlarmKit: 3040fe53c0d94b04c39aa4ada5e267027b36bda2
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
   FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
@@ -83,8 +78,7 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: c11b9e77372ab72c45c67311f6da7342e32df1e8
   ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
   SmileLock: 748bc15066337721fa655f4cf3184919b7f0c40a
-  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
 
-PODFILE CHECKSUM: 6a2d1721f5b2510b7d07a9e45cd45ef819c76d79
+PODFILE CHECKSUM: 90423723240a754e5a62bb9ed06d62b667b53e33
 
 COCOAPODS: 1.0.1

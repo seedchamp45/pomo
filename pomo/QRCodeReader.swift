@@ -102,7 +102,7 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
 
   // MARK: - Initializing the AV Components
 
-  private func configureDefaultComponents() {
+  fileprivate func configureDefaultComponents() {
     session.addOutput(metadataOutput)
 
     if let _defaultDeviceInput = defaultDeviceInput {

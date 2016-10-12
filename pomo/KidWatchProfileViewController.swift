@@ -10,9 +10,9 @@ import UIKit
 
 class KidWatchProfileViewController: UIViewController {
 
-    @IBAction func submitButton(sender: UIButton) {
-        let vc:MasterNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("MasterNavigationController") as! MasterNavigationController
-        self.presentViewController(vc, animated: true, completion: nil)
+    @IBAction func submitButton(_ sender: UIButton) {
+        let vc:MasterNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "MasterNavigationController") as! MasterNavigationController
+        self.present(vc, animated: true, completion: nil)
         print("eiei")
     }
 }

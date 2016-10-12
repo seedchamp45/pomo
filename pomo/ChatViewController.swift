@@ -11,11 +11,11 @@ import JSQMessagesViewController
 
 class ChatViewController: JSQMessagesViewController {
     var messages = [JSQMessage]()
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     var conversation: Conversation?
     var incomingBubble: JSQMessagesBubbleImage!
     var outgoingBubble: JSQMessagesBubbleImage!
-    private var displayName: String!
+    fileprivate var displayName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +31,22 @@ class ChatViewController: JSQMessagesViewController {
          *
          */
         
-        if defaults.boolForKey(Setting.removeBubbleTails.rawValue) {
+        if defaults.bool(forKey: Setting.removeBubbleTails.rawValue) {
             // Make taillessBubbles
-            incomingBubble = JSQMessagesBubbleImageFactory(bubbleImage: UIImage.jsq_bubbleCompactTaillessImage(), capInsets: UIEdgeInsetsZero, layoutDirection: UIApplication.sharedApplication().userInterfaceLayoutDirection).incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
-            outgoingBubble = JSQMessagesBubbleImageFactory(bubbleImage: UIImage.jsq_bubbleCompactTaillessImage(), capInsets: UIEdgeInsetsZero, layoutDirection: UIApplication.sharedApplication().userInterfaceLayoutDirection).outgoingMessagesBubbleImageWithColor(UIColor.lightGrayColor())
+            incomingBubble = JSQMessagesBubbleImageFactory(bubble: UIImage.jsq_bubbleCompactTailless(), capInsets: UIEdgeInsets.zero, layoutDirection: UIApplication.shared.userInterfaceLayoutDirection).incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
+            outgoingBubble = JSQMessagesBubbleImageFactory(bubble: UIImage.jsq_bubbleCompactTailless(), capInsets: UIEdgeInsets.zero, layoutDirection: UIApplication.shared.userInterfaceLayoutDirection).outgoingMessagesBubbleImage(with: UIColor.lightGray)
         }
         else {
             // Bubbles with tails
-            incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
-            outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.lightGrayColor())
+            incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
+            outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(with: UIColor.lightGray)
         }
         
         /**
          *  Example on showing or removing Avatars based on user settings.
          */
         
-        if defaults.boolForKey(Setting.removeAvatar.rawValue) {
+        if defaults.bool(forKey: Setting.removeAvatar.rawValue) {
             collectionView?.collectionViewLayout.incomingAvatarViewSize = .zero
             collectionView?.collectionViewLayout.outgoingAvatarViewSize = .zero
         } else {
@@ -55,7 +55,7 @@ class ChatViewController: JSQMessagesViewController {
         }
         
         // Show Button to simulate incoming messages
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.jsq_defaultTypingIndicatorImage(), style: .Plain, target: self, action: #selector(receiveMessagePressed))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.jsq_defaultTypingIndicator(), style: .plain, target: self, action: #selector(receiveMessagePressed))
         
         // This is a beta feature that mostly works but to make things more stable it is diabled.
         collectionView?.collectionViewLayout.springinessEnabled = false
@@ -67,16 +67,16 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     func setupBackButton() {
-        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(backButtonTapped))
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(backButtonTapped))
         navigationItem.leftBarButtonItem = backButton
     }
     func backButtonTapped() {
-        let vc:MasterNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("MasterNavigationController") as! MasterNavigationController
-        self.presentViewController(vc, animated: true, completion: nil)
+        let vc:MasterNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "MasterNavigationController") as! MasterNavigationController
+        self.present(vc, animated: true, completion: nil)
         print("eiei")
     }
     
-    func receiveMessagePressed(sender: UIBarButtonItem) {
+    func receiveMessagePressed(_ sender: UIBarButtonItem) {
         /**
          *  DEMO ONLY
          *
@@ -92,7 +92,7 @@ class ChatViewController: JSQMessagesViewController {
         /**
          *  Scroll to actually view the indicator
          */
-        self.scrollToBottomAnimated(true)
+        self.scrollToBottom(animated: true)
         
         /**
          *  Copy last sent message, this will be the new "received" message
@@ -107,18 +107,18 @@ class ChatViewController: JSQMessagesViewController {
         var newMediaData:JSQMessageMediaData!
         var newMediaAttachmentCopy:AnyObject?
         
-        if copyMessage!.isMediaMessage() {
+        if (copyMessage! as AnyObject).isMediaMessage() {
             /**
              *  Last message was a media message
              */
-            let copyMediaData = copyMessage!.media
+            let copyMediaData = (copyMessage! as AnyObject).media
             
             switch copyMediaData {
             case is JSQPhotoMediaItem:
                 let photoItemCopy = (copyMediaData as! JSQPhotoMediaItem).copy() as! JSQPhotoMediaItem
                 photoItemCopy.appliesMediaViewMaskAsOutgoing = false
                 
-                newMediaAttachmentCopy = UIImage(CGImage: photoItemCopy.image!.CGImage!)
+                newMediaAttachmentCopy = UIImage(cgImage: photoItemCopy.image!.cgImage!)
                 
                 /**
                  *  Set image to nil to simulate "downloading" the image
@@ -130,7 +130,7 @@ class ChatViewController: JSQMessagesViewController {
             case is JSQLocationMediaItem:
                 let locationItemCopy = (copyMediaData as! JSQLocationMediaItem).copy() as! JSQLocationMediaItem
                 locationItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = locationItemCopy.location!.copy()
+                newMediaAttachmentCopy = locationItemCopy.location!.copy() as AnyObject?
                 
                 /**
                  *  Set location to nil to simulate "downloading" the location data
@@ -141,7 +141,7 @@ class ChatViewController: JSQMessagesViewController {
             case is JSQVideoMediaItem:
                 let videoItemCopy = (copyMediaData as! JSQVideoMediaItem).copy() as! JSQVideoMediaItem
                 videoItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = videoItemCopy.fileURL!.copy()
+                newMediaAttachmentCopy = (videoItemCopy.fileURL! as NSURL).copy() as AnyObject?
                 
                 /**
                  *  Reset video item to simulate "downloading" the video
@@ -153,7 +153,7 @@ class ChatViewController: JSQMessagesViewController {
             case is JSQAudioMediaItem:
                 let audioItemCopy = (copyMediaData as! JSQAudioMediaItem).copy() as! JSQAudioMediaItem
                 audioItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = audioItemCopy.audioData!.copy()
+                newMediaAttachmentCopy = (audioItemCopy.audioData! as NSData).copy() as AnyObject?
                 
                 /**
                  *  Reset audio item to simulate "downloading" the audio
@@ -172,7 +172,7 @@ class ChatViewController: JSQMessagesViewController {
              *  Last message was a text message
              */
             
-            newMessage = JSQMessage(senderId: AvatarIdJobs, displayName: getName(User.Jobs), text: copyMessage!.text)
+            newMessage = JSQMessage(senderId: AvatarIdJobs, displayName: getName(User.Jobs), text: (copyMessage! as AnyObject).text)
         }
         
         /**
@@ -184,13 +184,13 @@ class ChatViewController: JSQMessagesViewController {
          */
         
         self.messages.append(newMessage)
-        self.finishReceivingMessageAnimated(true)
+        self.finishReceivingMessage(animated: true)
         
         if newMessage.isMediaMessage {
             /**
              *  Simulate "downloading" media
              */
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
                 /**
                  *  Media is "finished downloading", re-display visible cells
                  *
@@ -208,11 +208,11 @@ class ChatViewController: JSQMessagesViewController {
                         self.collectionView!.reloadData()
                     })
                 case is JSQVideoMediaItem:
-                    (newMediaData as! JSQVideoMediaItem).fileURL = newMediaAttachmentCopy as? NSURL
+                    (newMediaData as! JSQVideoMediaItem).fileURL = newMediaAttachmentCopy as? URL
                     (newMediaData as! JSQVideoMediaItem).isReadyToPlay = true
                     self.collectionView!.reloadData()
                 case is JSQAudioMediaItem:
-                    (newMediaData as! JSQAudioMediaItem).audioData = newMediaAttachmentCopy as? NSData
+                    (newMediaData as! JSQAudioMediaItem).audioData = newMediaAttachmentCopy as? Data
                     self.collectionView!.reloadData()
                 default:
                     assertionFailure("Error: This Media type was not recognised")
@@ -222,7 +222,7 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     // MARK: JSQMessagesViewController method overrides
-    override func didPressSendButton(button: UIButton, withMessageText text: String, senderId: String, senderDisplayName: String, date: NSDate) {
+    override func didPressSend(_ button: UIButton, withMessageText text: String, senderId: String, senderDisplayName: String, date: Date) {
         /**
          *  Sending a message. Your implementation of this method should do *at least* the following:
          *
@@ -233,15 +233,15 @@ class ChatViewController: JSQMessagesViewController {
         
         let message = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
         self.messages.append(message)
-        self.finishSendingMessageAnimated(true)
+        self.finishSendingMessage(animated: true)
     }
     
-    override func didPressAccessoryButton(sender: UIButton) {
+    override func didPressAccessoryButton(_ sender: UIButton) {
         self.inputToolbar.contentView!.textView!.resignFirstResponder()
         
-        let sheet = UIAlertController(title: "Media messages", message: nil, preferredStyle: .ActionSheet)
+        let sheet = UIAlertController(title: "Media messages", message: nil, preferredStyle: .actionSheet)
         
-        let photoAction = UIAlertAction(title: "Send photo", style: .Default) { (action) in
+        let photoAction = UIAlertAction(title: "Send photo", style: .default) { (action) in
             /**
              *  Create fake photo
              */
@@ -249,7 +249,7 @@ class ChatViewController: JSQMessagesViewController {
             self.addMedia(photoItem)
         }
         
-        let locationAction = UIAlertAction(title: "Send location", style: .Default) { (action) in
+        let locationAction = UIAlertAction(title: "Send location", style: .default) { (action) in
             /**
              *  Add fake location
              */
@@ -258,7 +258,7 @@ class ChatViewController: JSQMessagesViewController {
             self.addMedia(locationItem)
         }
         
-        let videoAction = UIAlertAction(title: "Send video", style: .Default) { (action) in
+        let videoAction = UIAlertAction(title: "Send video", style: .default) { (action) in
             /**
              *  Add fake video
              */
@@ -267,7 +267,7 @@ class ChatViewController: JSQMessagesViewController {
             self.addMedia(videoItem)
         }
         
-        let audioAction = UIAlertAction(title: "Send audio", style: .Default) { (action) in
+        let audioAction = UIAlertAction(title: "Send audio", style: .default) { (action) in
             /**
              *  Add fake audio
              */
@@ -276,7 +276,7 @@ class ChatViewController: JSQMessagesViewController {
             self.addMedia(audioItem)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         sheet.addAction(photoAction)
         sheet.addAction(locationAction)
@@ -284,11 +284,11 @@ class ChatViewController: JSQMessagesViewController {
         sheet.addAction(audioAction)
         sheet.addAction(cancelAction)
         
-        self.presentViewController(sheet, animated: true, completion: nil)
+        self.present(sheet, animated: true, completion: nil)
     }
     
     func buildVideoItem() -> JSQVideoMediaItem {
-        let videoURL = NSURL(fileURLWithPath: "file://")
+        let videoURL = URL(fileURLWithPath: "file://")
         
         let videoItem = JSQVideoMediaItem(fileURL: videoURL, isReadyToPlay: true)
         
@@ -296,8 +296,8 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     func buildAudioItem() -> JSQAudioMediaItem {
-        let sample = NSBundle.mainBundle().pathForResource("jsq_messages_sample", ofType: "m4a")
-        let audioData = NSData(contentsOfFile: sample!)
+        let sample = Bundle.main.path(forResource: "jsq_messages_sample", ofType: "m4a")
+        let audioData = try? Data(contentsOf: URL(fileURLWithPath: sample!))
         
         let audioItem = JSQAudioMediaItem(data: audioData)
         
@@ -315,13 +315,13 @@ class ChatViewController: JSQMessagesViewController {
         return locationItem
     }
     
-    func addMedia(media:JSQMediaItem) {
+    func addMedia(_ media:JSQMediaItem) {
         let message = JSQMessage(senderId: self.senderId(), displayName: self.senderDisplayName(), media: media)
         self.messages.append(message)
         
         //Optional: play sent sound
         
-        self.finishSendingMessageAnimated(true)
+        self.finishSendingMessage(animated: true)
     }
     
     
@@ -335,42 +335,42 @@ class ChatViewController: JSQMessagesViewController {
         return getName(User.Wazniak)
     }
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, messageDataForItemAtIndexPath indexPath: NSIndexPath) -> JSQMessageData {
-        return messages[indexPath.item]
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, messageDataForItemAt indexPath: IndexPath) -> JSQMessageData {
+        return messages[(indexPath as NSIndexPath).item]
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath) -> JSQMessageBubbleImageDataSource {
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, messageBubbleImageDataForItemAt indexPath: IndexPath) -> JSQMessageBubbleImageDataSource {
         
-        return messages[indexPath.item].senderId == self.senderId() ? outgoingBubble : incomingBubble
+        return messages[(indexPath as NSIndexPath).item].senderId == self.senderId() ? outgoingBubble : incomingBubble
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, avatarImageDataForItemAtIndexPath indexPath: NSIndexPath) -> JSQMessageAvatarImageDataSource? {
-        let message = messages[indexPath.item]
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, avatarImageDataForItemAt indexPath: IndexPath) -> JSQMessageAvatarImageDataSource? {
+        let message = messages[(indexPath as NSIndexPath).item]
         return getAvatar(message.senderId)
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, attributedTextForCellTopLabelAtIndexPath indexPath: NSIndexPath) -> NSAttributedString? {
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, attributedTextForCellTopLabelAt indexPath: IndexPath) -> NSAttributedString? {
         /**
          *  This logic should be consistent with what you return from `heightForCellTopLabelAtIndexPath:`
          *  The other label text delegate methods should follow a similar pattern.
          *
          *  Show a timestamp for every 3rd message
          */
-        if (indexPath.item % 3 == 0) {
-            let message = self.messages[indexPath.item]
+        if ((indexPath as NSIndexPath).item % 3 == 0) {
+            let message = self.messages[(indexPath as NSIndexPath).item]
             
-            return JSQMessagesTimestampFormatter.sharedFormatter().attributedTimestampForDate(message.date)
+            return JSQMessagesTimestampFormatter.shared().attributedTimestamp(for: message.date)
         }
         
         return nil
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, attributedTextForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath) -> NSAttributedString? {
-        let message = messages[indexPath.item]
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath) -> NSAttributedString? {
+        let message = messages[(indexPath as NSIndexPath).item]
         
         // Displaying names above messages
         //Mark: Removing Sender Display Name
@@ -378,7 +378,7 @@ class ChatViewController: JSQMessagesViewController {
          *  Example on showing or removing senderDisplayName based on user settings.
          *  This logic should be consistent with what you return from `heightForCellTopLabelAtIndexPath:`
          */
-        if defaults.boolForKey(Setting.removeSenderDisplayName.rawValue) {
+        if defaults.bool(forKey: Setting.removeSenderDisplayName.rawValue) {
             return nil
         }
         
@@ -389,7 +389,7 @@ class ChatViewController: JSQMessagesViewController {
         return NSAttributedString(string: message.senderDisplayName)
     }
     
-    override func collectionView(collectionView: JSQMessagesCollectionView, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout, heightForCellTopLabelAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout, heightForCellTopLabelAt indexPath: IndexPath) -> CGFloat {
         /**
          *  Each label in a cell has a `height` delegate method that corresponds to its text dataSource method
          */
@@ -400,34 +400,34 @@ class ChatViewController: JSQMessagesViewController {
          *
          *  Show a timestamp for every 3rd message
          */
-        if indexPath.item % 3 == 0 {
+        if (indexPath as NSIndexPath).item % 3 == 0 {
             return kJSQMessagesCollectionViewCellLabelHeightDefault
         }
         
         return 0.0
     }
 
-    override func collectionView(collectionView: JSQMessagesCollectionView, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout, heightForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func collectionView(_ collectionView: JSQMessagesCollectionView, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout, heightForMessageBubbleTopLabelAt indexPath: IndexPath) -> CGFloat {
         
         /**
          *  Example on showing or removing senderDisplayName based on user settings.
          *  This logic should be consistent with what you return from `attributedTextForCellTopLabelAtIndexPath:`
          */
-        if defaults.boolForKey(Setting.removeSenderDisplayName.rawValue) {
+        if defaults.bool(forKey: Setting.removeSenderDisplayName.rawValue) {
             return 0.0
         }
         
         /**
          *  iOS7-style sender name labels
          */
-        let currentMessage = self.messages[indexPath.item]
+        let currentMessage = self.messages[(indexPath as NSIndexPath).item]
         
         if currentMessage.senderId == self.senderId() {
             return 0.0
         }
         
-        if indexPath.item - 1 > 0 {
-            let previousMessage = self.messages[indexPath.item - 1]
+        if (indexPath as NSIndexPath).item - 1 > 0 {
+            let previousMessage = self.messages[(indexPath as NSIndexPath).item - 1]
             if previousMessage.senderId == currentMessage.senderId {
                 return 0.0
             }

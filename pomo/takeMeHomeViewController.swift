@@ -20,8 +20,8 @@ class takeMeHomeViewController: UITableViewController {
         super.viewDidLoad()
         
         GMSServices.provideAPIKey("AIzaSyA0QlNOrMY6JU7wqgBXBamQq1v9wbR11Z0")
-        let camera = GMSCameraPosition.cameraWithLatitude(37.621262, longitude: -122.378945, zoom: 12)
-        mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        let camera = GMSCameraPosition.camera(withLatitude: 37.621262, longitude: -122.378945, zoom: 12)
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
         let currentLocation = CLLocationCoordinate2DMake(37.621262, -122.378945)
@@ -29,7 +29,7 @@ class takeMeHomeViewController: UITableViewController {
         marker.title = "SFO Airport"
         marker.map = mapView
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "next")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(takeMeHomeViewController.next as (takeMeHomeViewController) -> () -> ()))
     }
     
     func next() {
@@ -37,7 +37,7 @@ class takeMeHomeViewController: UITableViewController {
         if currentDestination == nil {
             currentDestination = destinations.first
         } else {
-            if let index = destinations.indexOf(currentDestination!) where index < destinations.count - 1 {
+            if let index = destinations.index(of: currentDestination!) , index < destinations.count - 1 {
                 currentDestination = destinations[index + 1]
             }
         }
@@ -45,10 +45,10 @@ class takeMeHomeViewController: UITableViewController {
         setMapCamera()
     }
     
-    private func setMapCamera() {
+    fileprivate func setMapCamera() {
         CATransaction.begin()
         CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
-        mapView?.animateToCameraPosition(GMSCameraPosition.cameraWithTarget(currentDestination!.location, zoom: currentDestination!.zoom))
+        mapView?.animate(to: GMSCameraPosition.camera(withTarget: currentDestination!.location, zoom: currentDestination!.zoom))
         CATransaction.commit()
         
         let marker = GMSMarker(position: currentDestination!.location)

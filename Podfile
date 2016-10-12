@@ -4,7 +4,7 @@ use_frameworks!
 target ‘pomo’ do
   pod 'AFNetworking', '~> 2.6'
   pod 'ORStackView', '~> 3.0'
-  pod 'SwiftyJSON', '~> 2.3'
+ # pod 'SwiftyJSON', '~> 2.3'
   pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
@@ -21,7 +21,7 @@ pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMes
 #pod "SlackTextViewController"
 #pod 'CVCalendar', '~> 1.4.0'
 #pod 'FSCalendar'
-pod "AlarmKit"
+#pod "AlarmKit"
 #pod "NMPopUpViewSwift"
 #pod 'STZPopupView'
 #pod 'CNPPopupController'

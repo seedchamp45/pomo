@@ -9,14 +9,14 @@
 import Foundation
 
 private var singleton_map: [String : SingletonProtocol] = [String : SingletonProtocol]()
-private var singleton_queue: dispatch_queue_t = dispatch_queue_create("com.pomo.singletonfactory", DISPATCH_QUEUE_SERIAL)
+private var singleton_queue: DispatchQueue = DispatchQueue(label: "com.pomo.singletonfactory", attributes: [])
 
 class SingletonFactory <T: SingletonProtocol>
 {
     static func shareInstance() -> T?
     {
         var dev: T?
-        dispatch_sync(singleton_queue)
+        singleton_queue.sync
         {
             let identifier = T.className()
             var singleton: T? = singleton_map[identifier] as? T
@@ -32,7 +32,7 @@ class SingletonFactory <T: SingletonProtocol>
         }
         return dev
     }
-    static func setShareInstance(singleton: SingletonProtocol, Identifier:NSString) -> Void
+    static func setShareInstance(_ singleton: SingletonProtocol, Identifier:NSString) -> Void
     {
         singleton_map.updateValue(singleton, forKey: Identifier as String)
     }

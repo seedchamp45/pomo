@@ -17,15 +17,15 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBAction func sendtoLogin(sender: AnyObject) {
+    @IBAction func sendtoLogin(_ sender: AnyObject) {
     }
     var pageIndex: Int!
     var titleText: String!
     var imageFile: String!
     
-    @IBAction func sendtoLoginNavigation(sender: AnyObject) {
-        let vc:loginNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("loginNavigationController") as! loginNavigationController
-        self.presentViewController(vc, animated: true, completion: nil)
+    @IBAction func sendtoLoginNavigation(_ sender: AnyObject) {
+        let vc:loginNavigationController = self.storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
+        self.present(vc, animated: true, completion: nil)
         print("eiei")
         
     
@@ -39,7 +39,7 @@ class ContentViewController: UIViewController {
         self.imageView.image = UIImage(named: self.imageFile)
         self.titleLabel.text = self.titleText
         if pageIndex > 0 {
-            button.hidden = false
+            button.isHidden = false
         }
     }
     

@@ -18,7 +18,7 @@ enum User: String {
 }
 
 // Helper Function to get usernames for a secific User.
-func getName(user: User) -> String{
+func getName(_ user: User) -> String{
     switch user {
     case .Squires:
         return "Jesse Squires"
@@ -52,19 +52,19 @@ let AvatarIdWoz = "309-41802-93823"
 //
 // Create an avatar with Image
 
-let AvatarLeonard = JSQMessagesAvatarImageFactory().avatarImageWithUserInitials("DL", backgroundColor: UIColor.jsq_messageBubbleGreenColor(), textColor: UIColor.whiteColor(), font: UIFont.systemFontOfSize(12))
+let AvatarLeonard = JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "DL", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
 
-let AvatarCook = JSQMessagesAvatarImageFactory().avatarImageWithUserInitials("TC", backgroundColor: UIColor.grayColor(), textColor: UIColor.whiteColor(), font: UIFont.systemFontOfSize(12))
+let AvatarCook = JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "TC", backgroundColor: UIColor.gray, textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
 
 // Create avatar with Placeholder Image
-let AvatarJobs = JSQMessagesAvatarImageFactory().avatarImageWithPlaceholder(UIImage(named:"demo_avatar_jobs")!)
+let AvatarJobs = JSQMessagesAvatarImageFactory().avatarImage(withPlaceholder: UIImage(named:"demo_avatar_jobs")!)
 
-let AvatarWaz = JSQMessagesAvatarImageFactory().avatarImageWithUserInitials("SW", backgroundColor: UIColor.jsq_messageBubbleGreenColor(), textColor: UIColor.whiteColor(), font: UIFont.systemFontOfSize(12))
+let AvatarWaz = JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "SW", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
 
-let AvatarSquires = JSQMessagesAvatarImageFactory().avatarImageWithUserInitials("JSQ", backgroundColor: UIColor.grayColor(), textColor: UIColor.whiteColor(), font: UIFont.systemFontOfSize(12))
+let AvatarSquires = JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "JSQ", backgroundColor: UIColor.gray, textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
 
 // Helper Method for getting an avatar for a specific User.
-func getAvatar(id: String) -> JSQMessagesAvatarImage{
+func getAvatar(_ id: String) -> JSQMessagesAvatarImage{
     let user = User(rawValue: id)!
     
     switch user {
@@ -107,8 +107,8 @@ let photoItem = JSQPhotoMediaItem(image: UIImage(named: "goldengate"))
 let photoMessage = JSQMessage(senderId: AvatarIdWoz, displayName: getName(User.Wazniak), media: photoItem)
 
 // audio mesage
-let sample = NSBundle.mainBundle().pathForResource("jsq_messages_sample", ofType: "m4a")
-let audioData = NSData(contentsOfFile: sample!)
+let sample = Bundle.main.path(forResource: "jsq_messages_sample", ofType: "m4a")
+let audioData = try? Data(contentsOf: URL(fileURLWithPath: sample!))
 let audioItem = JSQAudioMediaItem(data: audioData)
 let audioMessage = JSQMessage(senderId: AvatarIdWoz, displayName: getName(User.Wazniak), media: audioItem)
 
