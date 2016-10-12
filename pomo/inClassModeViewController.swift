@@ -1,5 +1,5 @@
 //
-//  familyViewController.swift
+//  inClassModeViewController.swift
 //  pomo
 //
 //  Created by Thanawith Munkatitum on 10/12/2559 BE.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class familyViewController: UITableViewController {
+class inClassModeViewController: UIViewController {
 
 }
