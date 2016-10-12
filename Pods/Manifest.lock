@@ -44,7 +44,6 @@ PODS:
   - JSQMessagesViewController (7.3.4)
   - ORStackView (3.0.1):
     - FLKAutoLayout (~> 0.2)
-  - QRCodeReader.swift (7.0.1)
   - SmileLock (1.2.1)
   - SwiftyJSON (2.4.0)
 
@@ -58,7 +57,6 @@ DEPENDENCIES:
   - GooglePlaces
   - JSQMessagesViewController (from `https://github.com/jessesquires/JSQMessagesViewController.git`, branch `develop`)
   - ORStackView (~> 3.0)
-  - QRCodeReader.swift (~> 7.0.1)
   - SmileLock (~> 1.0)
   - SwiftyJSON (~> 2.3)
 
@@ -84,10 +82,9 @@ SPEC CHECKSUMS:
   GooglePlaces: 16e96266483b8010e9f275399403647978523c86
   JSQMessagesViewController: c11b9e77372ab72c45c67311f6da7342e32df1e8
   ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
-  QRCodeReader.swift: 2b57c1d5d503aeea620573a5c9215027b21d9e7a
   SmileLock: 748bc15066337721fa655f4cf3184919b7f0c40a
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
 
-PODFILE CHECKSUM: 097cf991b79d9da97ae38e17e40dba643f4e448d
+PODFILE CHECKSUM: 6a2d1721f5b2510b7d07a9e45cd45ef819c76d79
 
 COCOAPODS: 1.0.1

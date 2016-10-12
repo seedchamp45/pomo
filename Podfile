@@ -10,7 +10,7 @@ pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
 #pod 'SwiftQRCode'
 pod 'SmileLock’, ‘~>1.0’
- pod 'QRCodeReader.swift', '~> 7.0.1'
+# pod 'QRCodeReader.swift', '~> 7.0.1'
 
   pod 'GoogleMaps'
   pod 'GooglePlaces'

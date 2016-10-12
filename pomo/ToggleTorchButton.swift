@@ -28,25 +28,25 @@ import UIKit
 
 /// The toggle torch button.
 @IBDesignable final class ToggleTorchButton: UIButton {
-  @IBInspectable var edgeColor: UIColor = UIColor.white {
+  @IBInspectable var edgeColor: UIColor = UIColor.whiteColor() {
     didSet {
       setNeedsDisplay()
     }
   }
 
-  @IBInspectable var fillColor: UIColor = UIColor.lightGray {
+  @IBInspectable var fillColor: UIColor = UIColor.lightGrayColor() {
     didSet {
       setNeedsDisplay()
     }
   }
 
-  @IBInspectable var edgeHighlightedColor: UIColor = UIColor.white
-  @IBInspectable var fillHighlightedColor: UIColor = UIColor.darkGray
+  @IBInspectable var edgeHighlightedColor: UIColor = UIColor.whiteColor()
+  @IBInspectable var fillHighlightedColor: UIColor = UIColor.darkGrayColor()
 
-  override func draw(_ rect: CGRect) {
+  override func draw(rect: CGRect) {
     // Colors
-    let paintColor  = (self.state != .highlighted) ? fillColor : fillHighlightedColor
-    let strokeColor = (self.state != .highlighted) ? edgeColor : edgeHighlightedColor
+    let paintColor  = (self.state = .highlighted) ? fillColor : fillHighlightedColor
+    let strokeColor = (self.state = .highlighted) ? edgeColor : edgeHighlightedColor
 
     let width   = rect.width
     let height  = rect.height
@@ -100,24 +100,24 @@ import UIKit
   // MARK: - UIResponder Methods
 
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesBegan(touches, with: event)
+    super.touchesBegan(touches, withEvent: event)
 
     setNeedsDisplay()
   }
 
   override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesMoved(touches, with: event)
+    super.touchesMoved(touches, withEvent: event)
 
     setNeedsDisplay()
   }
 
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesEnded(touches, with: event)
+    super.touchesEnded(touches, withEvent: event)
     setNeedsDisplay()
   }
 
   override func touchesCancelled(_ touches: Set<UITouch>?, with event: UIEvent?) {
-    super.touchesCancelled(touches!, with: event)
+    super.touchesCancelled(touches!, withEvent: event)
 
     setNeedsDisplay()
   }
