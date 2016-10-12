@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1D98317A1DAE6C0400755621 /* HomekubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831791DAE6C0400755621 /* HomekubViewController.swift */; };
+		1D9831AC1DAE833200755621 /* DemoConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831A91DAE833200755621 /* DemoConversation.swift */; };
+		1D9831AD1DAE833200755621 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831AA1DAE833200755621 /* ChatViewController.swift */; };
+		1D9831AE1DAE833200755621 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831AB1DAE833200755621 /* Conversation.swift */; };
+		1D9831B31DAE83E700755621 /* InitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B11DAE83E700755621 /* InitalTableViewController.swift */; };
+		1D9831B41DAE83E700755621 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */; };
 		2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */; };
 		F114EEFA1DAA4CA9009842B4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */; };
 		F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */; };
@@ -41,7 +46,6 @@
 		F14B3EBF1DA9260100C5EBA2 /* locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */; };
 		F14B3EC41DA9279400C5EBA2 /* familyAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */; };
 		F14B3EC61DA9293100C5EBA2 /* addFamilyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */; };
-		F14B3EC81DA92CA600C5EBA2 /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */; };
 		F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */; };
 		F14B3ECC1DA935BC00C5EBA2 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */; };
 		F14B3ECE1DA935EB00C5EBA2 /* addSafeZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */; };
@@ -77,6 +81,11 @@
 /* Begin PBXFileReference section */
 		11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.release.xcconfig"; sourceTree = "<group>"; };
 		1D9831791DAE6C0400755621 /* HomekubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomekubViewController.swift; sourceTree = "<group>"; };
+		1D9831A91DAE833200755621 /* DemoConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoConversation.swift; sourceTree = "<group>"; };
+		1D9831AA1DAE833200755621 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1D9831AB1DAE833200755621 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		1D9831B11DAE83E700755621 /* InitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitalTableViewController.swift; sourceTree = "<group>"; };
+		1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.debug.xcconfig"; sourceTree = "<group>"; };
 		F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginNavigationController.swift; sourceTree = "<group>"; };
@@ -111,7 +120,6 @@
 		F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationViewController.swift; sourceTree = "<group>"; };
 		F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = familyAdminViewController.swift; sourceTree = "<group>"; };
 		F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addFamilyAccountViewController.swift; sourceTree = "<group>"; };
-		F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
 		F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = safeZoneViewController.swift; sourceTree = "<group>"; };
 		F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
 		F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSafeZoneViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +185,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1D9831B01DAE833F00755621 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				1D9831A91DAE833200755621 /* DemoConversation.swift */,
+				1D9831AA1DAE833200755621 /* ChatViewController.swift */,
+				1D9831AB1DAE833200755621 /* Conversation.swift */,
+				1D9831B11DAE83E700755621 /* InitalTableViewController.swift */,
+				1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
 		F114EF0B1DABDB17009842B4 /* otpExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,8 +244,8 @@
 				F114EF261DADBB26009842B4 /* familyViewController.swift */,
 				F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */,
 				F14B3EC51DA9293100C5EBA2 /* addFamilyAccountViewController.swift */,
-				F14B3EC71DA92CA600C5EBA2 /* messageViewController.swift */,
 				F14B3EC91DA9341300C5EBA2 /* safeZoneViewController.swift */,
+				1D9831B01DAE833F00755621 /* chat */,
 				F14B3ECD1DA935EB00C5EBA2 /* addSafeZoneViewController.swift */,
 				F14B3ECB1DA935BC00C5EBA2 /* historyViewController.swift */,
 				F14B3ECF1DA9386600C5EBA2 /* GroupChatViewController.swift */,
@@ -375,6 +395,7 @@
 				TargetAttributes = {
 					F15B7A8E1DA8D67100A663D9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = W767ECJ8B4;
 						LastSwiftMigration = 0800;
 					};
 					F15B7AA51DA8D67100A663D9 = {
@@ -495,17 +516,18 @@
 				F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */,
 				F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */,
 				F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */,
+				1D9831B31DAE83E700755621 /* InitalTableViewController.swift in Sources */,
 				F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */,
 				F114EF081DABDB03009842B4 /* extension.swift in Sources */,
 				F114EF1D1DAC0374009842B4 /* addIMEIViewController.swift in Sources */,
 				F114EF331DADBD5E009842B4 /* BTSafetyAreaViewController.swift in Sources */,
-				F14B3EC81DA92CA600C5EBA2 /* messageViewController.swift in Sources */,
 				F114EF0A1DABDB11009842B4 /* MyPasswordUIValidation.swift in Sources */,
 				1D98317A1DAE6C0400755621 /* HomekubViewController.swift in Sources */,
 				F14B3EC41DA9279400C5EBA2 /* familyAdminViewController.swift in Sources */,
 				F14B3EAC1DA90F3900C5EBA2 /* startViewController.swift in Sources */,
 				F114EF021DABD505009842B4 /* informationRegisterViewController.swift in Sources */,
 				F15B7A9B1DA8D67100A663D9 /* pomo.xcdatamodeld in Sources */,
+				1D9831AE1DAE833200755621 /* Conversation.swift in Sources */,
 				F114EF041DABD7EF009842B4 /* enterOTPViewController.swift in Sources */,
 				F114EF071DABDB03009842B4 /* BlurPasswordLoginViewController.swift in Sources */,
 				F114EF2D1DADBCA4009842B4 /* PedometerViewController.swift in Sources */,
@@ -529,7 +551,10 @@
 				F14B3EBF1DA9260100C5EBA2 /* locationViewController.swift in Sources */,
 				F14B3EA91DA8FF2100C5EBA2 /* SingletonFactory.swift in Sources */,
 				F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */,
+				1D9831AD1DAE833200755621 /* ChatViewController.swift in Sources */,
+				1D9831AC1DAE833200755621 /* DemoConversation.swift in Sources */,
 				F14B3ECC1DA935BC00C5EBA2 /* historyViewController.swift in Sources */,
+				1D9831B41DAE83E700755621 /* SettingsTableViewController.swift in Sources */,
 				F114EF371DADBDE2009842B4 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,6 +706,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W767ECJ8B4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -701,6 +727,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W767ECJ8B4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
