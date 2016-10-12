@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D98317A1DAE6C0400755621 /* HomekubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831791DAE6C0400755621 /* HomekubViewController.swift */; };
 		2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */; };
 		F114EEFA1DAA4CA9009842B4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */; };
 		F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */; };
@@ -17,7 +18,6 @@
 		F114EF081DABDB03009842B4 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF061DABDB03009842B4 /* extension.swift */; };
 		F114EF0A1DABDB11009842B4 /* MyPasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF091DABDB11009842B4 /* MyPasswordUIValidation.swift */; };
 		F114EF1D1DAC0374009842B4 /* addIMEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF1C1DAC0374009842B4 /* addIMEIViewController.swift */; };
-		F114EF211DAD2993009842B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF201DAD2993009842B4 /* HomeViewController.swift */; };
 		F114EF271DADBB26009842B4 /* familyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF261DADBB26009842B4 /* familyViewController.swift */; };
 		F114EF291DADBBB7009842B4 /* friendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF281DADBBB7009842B4 /* friendViewController.swift */; };
 		F114EF2B1DADBC74009842B4 /* inClassModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EF2A1DADBC74009842B4 /* inClassModeViewController.swift */; };
@@ -76,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.release.xcconfig"; sourceTree = "<group>"; };
+		1D9831791DAE6C0400755621 /* HomekubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomekubViewController.swift; sourceTree = "<group>"; };
 		CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.debug.xcconfig"; sourceTree = "<group>"; };
 		F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginNavigationController.swift; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		F114EF061DABDB03009842B4 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		F114EF091DABDB11009842B4 /* MyPasswordUIValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPasswordUIValidation.swift; sourceTree = "<group>"; };
 		F114EF1C1DAC0374009842B4 /* addIMEIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addIMEIViewController.swift; sourceTree = "<group>"; };
-		F114EF201DAD2993009842B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F114EF261DADBB26009842B4 /* familyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = familyViewController.swift; sourceTree = "<group>"; };
 		F114EF281DADBBB7009842B4 /* friendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendViewController.swift; sourceTree = "<group>"; };
 		F114EF2A1DADBC74009842B4 /* inClassModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inClassModeViewController.swift; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		F14B3EC01DA9260800C5EBA2 /* HomeClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F114EF201DAD2993009842B4 /* HomeViewController.swift */,
+				1D9831791DAE6C0400755621 /* HomekubViewController.swift */,
 				F14B3EBE1DA9260100C5EBA2 /* locationViewController.swift */,
 				F114EF261DADBB26009842B4 /* familyViewController.swift */,
 				F14B3EC31DA9279400C5EBA2 /* familyAdminViewController.swift */,
@@ -370,18 +370,21 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kittipol Munkatitum";
 				TargetAttributes = {
 					F15B7A8E1DA8D67100A663D9 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					F15B7AA51DA8D67100A663D9 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = F15B7A8E1DA8D67100A663D9;
 					};
 					F15B7AB01DA8D67100A663D9 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = F15B7A8E1DA8D67100A663D9;
 					};
 				};
@@ -491,7 +494,6 @@
 				F114EF311DADBD29009842B4 /* MosquitoViewController.swift in Sources */,
 				F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */,
 				F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */,
-				F114EF211DAD2993009842B4 /* HomeViewController.swift in Sources */,
 				F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */,
 				F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */,
 				F114EF081DABDB03009842B4 /* extension.swift in Sources */,
@@ -499,6 +501,7 @@
 				F114EF331DADBD5E009842B4 /* BTSafetyAreaViewController.swift in Sources */,
 				F14B3EC81DA92CA600C5EBA2 /* messageViewController.swift in Sources */,
 				F114EF0A1DABDB11009842B4 /* MyPasswordUIValidation.swift in Sources */,
+				1D98317A1DAE6C0400755621 /* HomekubViewController.swift in Sources */,
 				F14B3EC41DA9279400C5EBA2 /* familyAdminViewController.swift in Sources */,
 				F14B3EAC1DA90F3900C5EBA2 /* startViewController.swift in Sources */,
 				F114EF021DABD505009842B4 /* informationRegisterViewController.swift in Sources */,
@@ -596,8 +599,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -642,8 +647,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -662,6 +669,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -671,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,6 +691,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -689,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11DE6B9A22581BDDB272102E /* Pods-pomo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,6 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -711,6 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomo.app/pomo";
 			};
 			name = Debug;
@@ -723,6 +736,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomo.app/pomo";
 			};
 			name = Release;
@@ -734,6 +748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = pomo;
 			};
 			name = Debug;
@@ -745,6 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = pomo;
 			};
 			name = Release;
