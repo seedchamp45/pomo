@@ -59,12 +59,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SmileLock.xcscheme</key>
+		<key>QRCodeReader.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftQRCode.xcscheme</key>
+		<key>SmileLock.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -77,11 +77,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00A0C694CA2E6FA6D7D593DEB9FACC2A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
 		<dict>
 			<key>primary</key>
@@ -97,17 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E43A82A8B26135219603EDE3E435BA9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6C3AC44D097CD4808FFAC85A1E85B42E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6C73D793508378D284DC7822124AAE35</key>
+		<key>4B3D0C16CF5159397E93E2503B882343</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,12 +112,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A402D169921CA67A74D441424F7AFC9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD4E9D8DA160DA3A28013EC48E5D074A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C6CEE7BEADAD8E11590F1C4ACF7C4BCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D7AB62B30591E856FCE2260D911FA9B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0DD34EEED45B6A8818BD443E8265167</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,8 @@
+
+App Thinning Size Report for All Variants of pomo
+
+Variant: pomo-iPhone 6s.ipa
+Supported devices: iPhone 6s
+App + On Demand Resources size: 6.8 MB compressed, 17.9 MB uncompressed
+App size: 6.8 MB compressed, 17.9 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
