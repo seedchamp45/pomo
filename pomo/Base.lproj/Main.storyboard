@@ -1658,31 +1658,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qOa-bk-1Gh">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="3UB-RH-bDD">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eJ8-bn-9gS">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Notification"/>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="Notification" id="tmu-po-gBy">
                             <connections>
-                                <action selector="notificationWithSender:" destination="2e9-R1-als" id="x49-T5-TKb"/>
+                                <action selector="notificationWithSender:" destination="2e9-R1-als" id="96I-Th-Lmx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="weQ-EY-C4t">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c8G-57-OiE">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="log in" id="XkV-r9-qZp">
                             <connections>
-                                <segue destination="lBZ-y4-vYv" kind="show" id="19b-eL-AVu"/>
+                                <segue destination="lBZ-y4-vYv" kind="show" id="fOw-mV-WHB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDi-Dx-eW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="420"/>
+            <point key="canvasLocation" x="921" y="540"/>
         </scene>
         <!--Master Navigation Controller-->
         <scene sceneID="Tqd-fF-Eh8">

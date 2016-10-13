@@ -749,7 +749,7 @@
 				);
 				INFOPLIST_FILE = pomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.c1474092336267;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
@@ -770,7 +770,7 @@
 				);
 				INFOPLIST_FILE = pomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kittipol.pomo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.c1474092336267;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pomo/pomo-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "pomo/pomo-Bridging-Header.h";
