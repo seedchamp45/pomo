@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import FBSDKCoreKit
+import GoogleMaps
 
 let fbNeedPermission = ["public_profile", "email", "user_friends"]
 
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+             GMSServices.provideAPIKey("AIzaSyA0QlNOrMY6JU7wqgBXBamQq1v9wbR11Z0")
         
         
         
