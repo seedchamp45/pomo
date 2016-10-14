@@ -20,6 +20,24 @@
 		1D9831AE1DAE833200755621 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831AB1DAE833200755621 /* Conversation.swift */; };
 		1D9831B31DAE83E700755621 /* InitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B11DAE83E700755621 /* InitalTableViewController.swift */; };
 		1D9831B41DAE83E700755621 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */; };
+		1DED49441DB131A000153BBD /* PXGoogleDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49311DB131A000153BBD /* PXGoogleDirections.swift */; };
+		1DED49451DB131A000153BBD /* PXGoogleDirectionsDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49321DB131A000153BBD /* PXGoogleDirectionsDistance.swift */; };
+		1DED49461DB131A000153BBD /* PXGoogleDirectionsDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49331DB131A000153BBD /* PXGoogleDirectionsDuration.swift */; };
+		1DED49471DB131A000153BBD /* PXGoogleDirectionsEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49341DB131A000153BBD /* PXGoogleDirectionsEnums.swift */; };
+		1DED49481DB131A000153BBD /* PXGoogleDirectionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49351DB131A000153BBD /* PXGoogleDirectionsResponse.swift */; };
+		1DED49491DB131A000153BBD /* PXGoogleDirectionsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49361DB131A000153BBD /* PXGoogleDirectionsRoute.swift */; };
+		1DED494A1DB131A000153BBD /* PXGoogleDirectionsRouteFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49371DB131A000153BBD /* PXGoogleDirectionsRouteFare.swift */; };
+		1DED494B1DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49381DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift */; };
+		1DED494C1DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49391DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift */; };
+		1DED494D1DB131A000153BBD /* PXGoogleDirectionsRouteLegStepTransitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493A1DB131A000153BBD /* PXGoogleDirectionsRouteLegStepTransitDetails.swift */; };
+		1DED494E1DB131A000153BBD /* PXGoogleDirectionsStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493B1DB131A000153BBD /* PXGoogleDirectionsStop.swift */; };
+		1DED494F1DB131A000153BBD /* PXGoogleDirectionsTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493C1DB131A000153BBD /* PXGoogleDirectionsTime.swift */; };
+		1DED49501DB131A000153BBD /* PXGoogleDirectionsTransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493D1DB131A000153BBD /* PXGoogleDirectionsTransitAgency.swift */; };
+		1DED49511DB131A000153BBD /* PXGoogleDirectionsTransitLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493E1DB131A000153BBD /* PXGoogleDirectionsTransitLine.swift */; };
+		1DED49521DB131A000153BBD /* PXGoogleDirectionsTransitLineVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED493F1DB131A000153BBD /* PXGoogleDirectionsTransitLineVehicle.swift */; };
+		1DED49531DB131A000153BBD /* PXLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49401DB131A000153BBD /* PXLocation.swift */; };
+		1DED49541DB131A000153BBD /* PXTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49411DB131A000153BBD /* PXTime.swift */; };
+		1DED49551DB131A000153BBD /* PXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49421DB131A000153BBD /* PXUtils.swift */; };
 		2D159F68E8CD298E103735A5 /* Pods_pomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BD7AE423967DBAD5ED3CD /* Pods_pomo.framework */; };
 		F114EEFA1DAA4CA9009842B4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */; };
 		F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */; };
@@ -100,6 +118,25 @@
 		1D9831AB1DAE833200755621 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		1D9831B11DAE83E700755621 /* InitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitalTableViewController.swift; sourceTree = "<group>"; };
 		1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1DED49311DB131A000153BBD /* PXGoogleDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirections.swift; sourceTree = "<group>"; };
+		1DED49321DB131A000153BBD /* PXGoogleDirectionsDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsDistance.swift; sourceTree = "<group>"; };
+		1DED49331DB131A000153BBD /* PXGoogleDirectionsDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsDuration.swift; sourceTree = "<group>"; };
+		1DED49341DB131A000153BBD /* PXGoogleDirectionsEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsEnums.swift; sourceTree = "<group>"; };
+		1DED49351DB131A000153BBD /* PXGoogleDirectionsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsResponse.swift; sourceTree = "<group>"; };
+		1DED49361DB131A000153BBD /* PXGoogleDirectionsRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsRoute.swift; sourceTree = "<group>"; };
+		1DED49371DB131A000153BBD /* PXGoogleDirectionsRouteFare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsRouteFare.swift; sourceTree = "<group>"; };
+		1DED49381DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsRouteLeg.swift; sourceTree = "<group>"; };
+		1DED49391DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsRouteLegStep.swift; sourceTree = "<group>"; };
+		1DED493A1DB131A000153BBD /* PXGoogleDirectionsRouteLegStepTransitDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsRouteLegStepTransitDetails.swift; sourceTree = "<group>"; };
+		1DED493B1DB131A000153BBD /* PXGoogleDirectionsStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsStop.swift; sourceTree = "<group>"; };
+		1DED493C1DB131A000153BBD /* PXGoogleDirectionsTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsTime.swift; sourceTree = "<group>"; };
+		1DED493D1DB131A000153BBD /* PXGoogleDirectionsTransitAgency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsTransitAgency.swift; sourceTree = "<group>"; };
+		1DED493E1DB131A000153BBD /* PXGoogleDirectionsTransitLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsTransitLine.swift; sourceTree = "<group>"; };
+		1DED493F1DB131A000153BBD /* PXGoogleDirectionsTransitLineVehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsTransitLineVehicle.swift; sourceTree = "<group>"; };
+		1DED49401DB131A000153BBD /* PXLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXLocation.swift; sourceTree = "<group>"; };
+		1DED49411DB131A000153BBD /* PXTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXTime.swift; sourceTree = "<group>"; };
+		1DED49421DB131A000153BBD /* PXUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXUtils.swift; sourceTree = "<group>"; };
+		1DED49431DB131A000153BBD /* PXGoogleDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXGoogleDirections.h; sourceTree = "<group>"; };
 		CD9885526D949FC9FDF4DAB6 /* Pods-pomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pomo/Pods-pomo.debug.xcconfig"; sourceTree = "<group>"; };
 		F114EEF91DAA4CA9009842B4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		F114EEFB1DAA855E009842B4 /* loginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginNavigationController.swift; sourceTree = "<group>"; };
@@ -225,6 +262,32 @@
 			name = chat;
 			sourceTree = "<group>";
 		};
+		1DED49561DB131A900153BBD /* direction */ = {
+			isa = PBXGroup;
+			children = (
+				1DED49311DB131A000153BBD /* PXGoogleDirections.swift */,
+				1DED49321DB131A000153BBD /* PXGoogleDirectionsDistance.swift */,
+				1DED49331DB131A000153BBD /* PXGoogleDirectionsDuration.swift */,
+				1DED49341DB131A000153BBD /* PXGoogleDirectionsEnums.swift */,
+				1DED49351DB131A000153BBD /* PXGoogleDirectionsResponse.swift */,
+				1DED49361DB131A000153BBD /* PXGoogleDirectionsRoute.swift */,
+				1DED49371DB131A000153BBD /* PXGoogleDirectionsRouteFare.swift */,
+				1DED49381DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift */,
+				1DED49391DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift */,
+				1DED493A1DB131A000153BBD /* PXGoogleDirectionsRouteLegStepTransitDetails.swift */,
+				1DED493B1DB131A000153BBD /* PXGoogleDirectionsStop.swift */,
+				1DED493C1DB131A000153BBD /* PXGoogleDirectionsTime.swift */,
+				1DED493D1DB131A000153BBD /* PXGoogleDirectionsTransitAgency.swift */,
+				1DED493E1DB131A000153BBD /* PXGoogleDirectionsTransitLine.swift */,
+				1DED493F1DB131A000153BBD /* PXGoogleDirectionsTransitLineVehicle.swift */,
+				1DED49401DB131A000153BBD /* PXLocation.swift */,
+				1DED49411DB131A000153BBD /* PXTime.swift */,
+				1DED49421DB131A000153BBD /* PXUtils.swift */,
+				1DED49431DB131A000153BBD /* PXGoogleDirections.h */,
+			);
+			name = direction;
+			sourceTree = "<group>";
+		};
 		F114EF0B1DABDB17009842B4 /* otpExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +347,7 @@
 				F114EF2A1DADBC74009842B4 /* inClassModeViewController.swift */,
 				F114EF2C1DADBCA4009842B4 /* PedometerViewController.swift */,
 				F114EF2E1DADBCF6009842B4 /* takeMeHomeViewController.swift */,
+				1DED49561DB131A900153BBD /* direction */,
 				F114EF301DADBD29009842B4 /* MosquitoViewController.swift */,
 				F114EF321DADBD5E009842B4 /* BTSafetyAreaViewController.swift */,
 				F114EF341DADBD89009842B4 /* watchQRCodeViewController.swift */,
@@ -541,10 +605,16 @@
 			files = (
 				F14B3EBB1DA9224200C5EBA2 /* secondAddWatchViewController.swift in Sources */,
 				F14B3EBD1DA9229200C5EBA2 /* KidWatchProfileViewController.swift in Sources */,
+				1DED494A1DB131A000153BBD /* PXGoogleDirectionsRouteFare.swift in Sources */,
 				F114EF311DADBD29009842B4 /* MosquitoViewController.swift in Sources */,
 				1D4B8AB51DAEAA000056C8FC /* QRCodeReaderResult.swift in Sources */,
+				1DED494F1DB131A000153BBD /* PXGoogleDirectionsTime.swift in Sources */,
+				1DED49461DB131A000153BBD /* PXGoogleDirectionsDuration.swift in Sources */,
 				F14B3ECA1DA9341300C5EBA2 /* safeZoneViewController.swift in Sources */,
+				1DED49491DB131A000153BBD /* PXGoogleDirectionsRoute.swift in Sources */,
+				1DED49501DB131A000153BBD /* PXGoogleDirectionsTransitAgency.swift in Sources */,
 				F114EEFC1DAA855E009842B4 /* loginNavigationController.swift in Sources */,
+				1DED49451DB131A000153BBD /* PXGoogleDirectionsDistance.swift in Sources */,
 				F14B3EB51DA9123200C5EBA2 /* RegisterViewController.swift in Sources */,
 				1D9831B31DAE83E700755621 /* InitalTableViewController.swift in Sources */,
 				F14B3EA51DA8F9CE00C5EBA2 /* BaseDataController.swift in Sources */,
@@ -566,31 +636,43 @@
 				F114EF2D1DADBCA4009842B4 /* PedometerViewController.swift in Sources */,
 				F14B3ED01DA9386600C5EBA2 /* GroupChatViewController.swift in Sources */,
 				F14B3EB71DA912B100C5EBA2 /* enterPasswordViewController.swift in Sources */,
+				1DED494C1DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift in Sources */,
 				F114EF271DADBB26009842B4 /* familyViewController.swift in Sources */,
 				F14B3EA71DA8FB1D00C5EBA2 /* SingletonProtocol.swift in Sources */,
 				F14B3ED41DA9454800C5EBA2 /* editFriendViewController.swift in Sources */,
+				1DED494B1DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift in Sources */,
 				F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */,
 				F114EEFA1DAA4CA9009842B4 /* ContentViewController.swift in Sources */,
+				1DED49531DB131A000153BBD /* PXLocation.swift in Sources */,
 				F14B3EB21DA9115B00C5EBA2 /* LoginViewController.swift in Sources */,
 				F114EF001DABCECD009842B4 /* loginEmailContoller.swift in Sources */,
+				1DED49481DB131A000153BBD /* PXGoogleDirectionsResponse.swift in Sources */,
 				F114EF351DADBD89009842B4 /* watchQRCodeViewController.swift in Sources */,
+				1DED49471DB131A000153BBD /* PXGoogleDirectionsEnums.swift in Sources */,
+				1DED49541DB131A000153BBD /* PXTime.swift in Sources */,
 				F14B3EAE1DA90FBB00C5EBA2 /* MasterNavigationController.swift in Sources */,
 				F114EF2B1DADBC74009842B4 /* inClassModeViewController.swift in Sources */,
 				F14B3ED61DA945CF00C5EBA2 /* choosePictureViewController.swift in Sources */,
 				F114EF2F1DADBCF6009842B4 /* takeMeHomeViewController.swift in Sources */,
+				1DED49551DB131A000153BBD /* PXUtils.swift in Sources */,
 				F14B3EC61DA9293100C5EBA2 /* addFamilyAccountViewController.swift in Sources */,
 				F14B3ECE1DA935EB00C5EBA2 /* addSafeZoneViewController.swift in Sources */,
 				F114EF291DADBBB7009842B4 /* friendViewController.swift in Sources */,
+				1DED49441DB131A000153BBD /* PXGoogleDirections.swift in Sources */,
 				F14B3EBF1DA9260100C5EBA2 /* locationViewController.swift in Sources */,
 				1D4B8AB91DAEAA000056C8FC /* SwitchCameraButton.swift in Sources */,
 				1D4B8AB71DAEAA000056C8FC /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				1DED49511DB131A000153BBD /* PXGoogleDirectionsTransitLine.swift in Sources */,
+				1DED494E1DB131A000153BBD /* PXGoogleDirectionsStop.swift in Sources */,
 				F14B3EA91DA8FF2100C5EBA2 /* SingletonFactory.swift in Sources */,
 				F15B7A931DA8D67100A663D9 /* AppDelegate.swift in Sources */,
 				1D9831AD1DAE833200755621 /* ChatViewController.swift in Sources */,
 				1D9831AC1DAE833200755621 /* DemoConversation.swift in Sources */,
 				1D4B8AB61DAEAA000056C8FC /* QRCodeReaderViewController.swift in Sources */,
+				1DED49521DB131A000153BBD /* PXGoogleDirectionsTransitLineVehicle.swift in Sources */,
 				F14B3ECC1DA935BC00C5EBA2 /* historyViewController.swift in Sources */,
 				1D9831B41DAE83E700755621 /* SettingsTableViewController.swift in Sources */,
+				1DED494D1DB131A000153BBD /* PXGoogleDirectionsRouteLegStepTransitDetails.swift in Sources */,
 				F114EF371DADBDE2009842B4 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
