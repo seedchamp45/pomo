@@ -148,6 +148,7 @@ class takeMeHomeViewController: UIViewController {
     @IBAction func goButtonTouched(sender: UIButton) {
         directionsAPI.delegate = self
         directionsAPI.from = PXLocation.NamedLocation(originField.text!)
+        print("eiei\(PXLocation.NamedLocation(originField.text!))")
         directionsAPI.to = PXLocation.NamedLocation(destinationField.text!)
         directionsAPI.mode = modeFromField()
         if advancedSwitch.isOn {
