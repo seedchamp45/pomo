@@ -17,11 +17,12 @@ let fbNeedPermission = ["public_profile", "email", "user_friends"]
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    	var directionsAPI: PXGoogleDirections!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-             GMSServices.provideAPIKey("AIzaSyA0QlNOrMY6JU7wqgBXBamQq1v9wbR11Z0")
+             GMSServices.provideAPIKey("AIzaSyD48HoL3JO-RCGi6O5lqyvD9t0X8TG5gf0")
         
+        directionsAPI = PXGoogleDirections(apiKey: "AIzaSyD48HoL3JO-RCGi6O5lqyvD9t0X8TG5gf0")
         
         
         // Override point for customization after application launch.
