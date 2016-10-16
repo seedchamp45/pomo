@@ -13,7 +13,7 @@ import GoogleMaps
 protocol MainViewControllerDelegate {
     func didAddWaypoint(waypoint: PXLocation)
 }
-class takeMeHomeViewController: UIViewController {
+class takeMeHomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var originField: UITextField!
     @IBOutlet weak var destinationField: UITextField!
     @IBOutlet weak var modeField: UISegmentedControl!
@@ -37,7 +37,10 @@ class takeMeHomeViewController: UIViewController {
     @IBOutlet weak var languageField: UISegmentedControl!
     var startArriveDate: NSDate?
     var waypoints: [PXLocation] = [PXLocation]()
-    
+    let locationManager = CLLocationManager()
+    var center:CLLocationCoordinate2D? = nil
+    var Lat:Double?
+    var Long:Double?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -58,6 +61,18 @@ class takeMeHomeViewController: UIViewController {
         let clearButton = UIBarButtonItem(title: "Clear", style: .plain, target: self, action: #selector(takeMeHomeViewController.clearButtonTouched(sender:)))
         keyboardDoneButtonView.setItems([doneButton, clearButton], animated: false)
         startArriveDateField.inputAccessoryView = keyboardDoneButtonView
+        
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+    
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        
+        
+         Lat = locationManager.location?.coordinate.latitude;
+         Long = locationManager.location?.coordinate.longitude;
+        print("lat:\(Lat),Long:\(Long))")
+      //  self.mapView.showsUserLocation = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -133,6 +148,23 @@ class takeMeHomeViewController: UIViewController {
         startArriveDateField.isEnabled = false
     }
     
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations.last
+        
+        center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+
+        
+        //self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
+    {
+        print("Error: " + error.localizedDescription)
+    }
+    
     @IBAction func addWaypointButtonTouched(sender: UIButton) {
         if let wpvc = self.storyboard?.instantiateViewController(withIdentifier: "Waypoint") as? WaypointViewController {
             wpvc.delegate = self
@@ -147,9 +179,19 @@ class takeMeHomeViewController: UIViewController {
     
     @IBAction func goButtonTouched(sender: UIButton) {
         directionsAPI.delegate = self
-        directionsAPI.from = PXLocation.NamedLocation(originField.text!)
-        print("eiei\(PXLocation.NamedLocation(originField.text!))")
+    
+             //   print("location\(PXLocation.CoordinateLocation(center!))")
+        directionsAPI.from =  PXLocation.CoordinateLocation(CLLocationCoordinate2DMake(Lat!, Long!))
+        //directionsAPI.from = PXLocation.NamedLocation(originField.text!)
+        
+        if (destinationField.text) == "Home" || (destinationField.text) == "home" || (destinationField.text) == "HOME"
+        {
+             directionsAPI.to = PXLocation.NamedLocation("Silom")
+        }
+        else
+        {
         directionsAPI.to = PXLocation.NamedLocation(destinationField.text!)
+        }
         directionsAPI.mode = modeFromField()
         if advancedSwitch.isOn {
             directionsAPI.transitRoutingPreference = transitRoutingPreferenceFromField()
