@@ -14,6 +14,7 @@
 		1D4B8AB81DAEAA000056C8FC /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B8AB11DAEAA000056C8FC /* ReaderOverlayView.swift */; };
 		1D4B8AB91DAEAA000056C8FC /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B8AB21DAEAA000056C8FC /* SwitchCameraButton.swift */; };
 		1D4B8ABA1DAEAA000056C8FC /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B8AB31DAEAA000056C8FC /* ToggleTorchButton.swift */; };
+		1D7B9BF91DB65CB3001BE917 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7B9BF81DB65CB3001BE917 /* WebViewController.swift */; };
 		1D98317A1DAE6C0400755621 /* HomekubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831791DAE6C0400755621 /* HomekubViewController.swift */; };
 		1D9831AC1DAE833200755621 /* DemoConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831A91DAE833200755621 /* DemoConversation.swift */; };
 		1D9831AD1DAE833200755621 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831AA1DAE833200755621 /* ChatViewController.swift */; };
@@ -114,6 +115,7 @@
 		1D4B8AB11DAEAA000056C8FC /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		1D4B8AB21DAEAA000056C8FC /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		1D4B8AB31DAEAA000056C8FC /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		1D7B9BF81DB65CB3001BE917 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1D9831791DAE6C0400755621 /* HomekubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomekubViewController.swift; sourceTree = "<group>"; };
 		1D9831A91DAE833200755621 /* DemoConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoConversation.swift; sourceTree = "<group>"; };
 		1D9831AA1DAE833200755621 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				F114EF2A1DADBC74009842B4 /* inClassModeViewController.swift */,
 				F114EF2C1DADBCA4009842B4 /* PedometerViewController.swift */,
 				F114EF2E1DADBCF6009842B4 /* takeMeHomeViewController.swift */,
+				1D7B9BF81DB65CB3001BE917 /* WebViewController.swift */,
 				1DED495B1DB1F4A700153BBD /* take mt home */,
 				1DED49561DB131A900153BBD /* direction */,
 				F114EF301DADBD29009842B4 /* MosquitoViewController.swift */,
@@ -654,6 +657,7 @@
 				1DED494C1DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift in Sources */,
 				F114EF271DADBB26009842B4 /* familyViewController.swift in Sources */,
 				F14B3EA71DA8FB1D00C5EBA2 /* SingletonProtocol.swift in Sources */,
+				1D7B9BF91DB65CB3001BE917 /* WebViewController.swift in Sources */,
 				F14B3ED41DA9454800C5EBA2 /* editFriendViewController.swift in Sources */,
 				1DED494B1DB131A000153BBD /* PXGoogleDirectionsRouteLeg.swift in Sources */,
 				F14B3EB91DA91DC700C5EBA2 /* addwatchViewController.swift in Sources */,

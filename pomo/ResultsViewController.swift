@@ -10,7 +10,7 @@ import GoogleMaps
 import UIKit
 
 
-class ResultsViewController: UIViewController {
+class ResultsViewController: UIViewController ,CLLocationManagerDelegate {
 	@IBOutlet weak var prevButton: UIButton!
 	@IBOutlet weak var routesLabel: UILabel!
 	@IBOutlet weak var nextButton: UIButton!
@@ -19,12 +19,51 @@ class ResultsViewController: UIViewController {
 	var request: PXGoogleDirections!
 	var results: [PXGoogleDirectionsRoute]!
 	var routeIndex: Int = 0
+     let locationManager = CLLocationManager()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		mapView.delegate = self
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        
+        self.mapView.isMyLocationEnabled = true
+        
 	}
 	
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations.last
+        
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        let marker = GMSMarker(position: center)
+        marker.map = mapView
+         let zoom: Float?
+        let camera = GMSCameraPosition.camera(withLatitude: location!.coordinate.latitude,
+                                                          longitude: location!.coordinate.longitude, zoom: 8)
+        
+        mapView.animate(toLocation: center)
+          mapView.animate(to: camera)
+        
+        //mapView.isMyLocationEnabled = true
+
+      //  let region =
+            //MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        
+       
+        
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
+    {
+        print("Error: " + error.localizedDescription)
+    }
+    
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		updateRoute()

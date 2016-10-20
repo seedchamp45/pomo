@@ -41,6 +41,10 @@ class takeMeHomeViewController: UIViewController, CLLocationManagerDelegate {
     var center:CLLocationCoordinate2D? = nil
     var Lat:Double?
     var Long:Double?
+    
+    var latitude:Int?
+    var longitude:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -71,7 +75,17 @@ class takeMeHomeViewController: UIViewController, CLLocationManagerDelegate {
         
          Lat = locationManager.location?.coordinate.latitude;
          Long = locationManager.location?.coordinate.longitude;
-        print("lat:\(Lat),Long:\(Long))")
+        print("lat:\(Lat!),Long:\(Long!))")
+        
+        longitude = Int(Long!)
+        latitude = Int(Lat!)
+        
+        
+        
+        let defaults = UserDefaults.standard
+        defaults.set("http://maps.google.com/maps?saddr=\(Lat!),\(Long!)&daddr=silom&hl=en", forKey: "name")
+        
+        
       //  self.mapView.showsUserLocation = true
     }
     
@@ -176,6 +190,74 @@ class takeMeHomeViewController: UIViewController, CLLocationManagerDelegate {
         waypoints.removeAll(keepingCapacity: false)
         updateWaypointsField()
     }
+    
+    
+    
+    @IBAction func gotoWebView(sender: UIButton) {
+        print("eii")
+        
+        
+        
+        
+        
+        let defaults = UserDefaults.standard
+        
+        if (destinationField.text) == "Home" || (destinationField.text) == "home" || (destinationField.text) == "HOME"
+        {
+               defaults.set("http://maps.google.com/maps?saddr=\(Lat!),\(Long!)&daddr=silom&hl=en", forKey: "name")
+        }
+        
+        else
+        {
+            defaults.set("http://maps.google.com/maps?saddr=\(Lat!),\(Long!)&daddr=\(destinationField.text!)&hl=en", forKey: "name")
+        }
+        
+     
+        
+        
+        
+        
+        
+//        let vc:WebViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+//      //  self.present(vc, animated: true, completion: nil)
+//        print("eiei")
+
+        
+       // vc.urlWebsite = "http://maps.google.com/maps?saddr=\(latitude!),\(longitude!)"
+        
+//        // set up webview
+//        let webView = UIWebView(frame: self.view.frame) // or pass in a CGRect frame of your choice
+////        webView.loadRequest(NSURLRequest(url:
+////            NSURL(string: "http://maps.google.com/maps?daddr=\(latitude),\(longitude)&saddr=13.7447, 100.5348&views=traffic")! as URL) as URLRequest)
+//        
+//        webView.loadRequest(NSURLRequest(url:
+//            NSURL(string: "http://maps.google.com/maps?saddr=\(latitude!),\(longitude!)")! as URL) as URLRequest)
+//        // add webView to current view
+//        print("http://maps.google.com/maps?saddr=\(latitude!),\(longitude!)")
+//        self.view.addSubview(webView)
+//        self.view.bringSubview(toFront: webView)
+//        
+//        // load the Google Maps URL
+
+    }
+    
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let websiteController = segue.destination as! WebViewController
+        if segue.identifier == "webView" {
+            websiteController.urlWebsite = "http://maps.google.com/maps?saddr=\(latitude!),\(longitude!)" as String
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
     
     @IBAction func goButtonTouched(sender: UIButton) {
         directionsAPI.delegate = self
