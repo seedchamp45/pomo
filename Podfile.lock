@@ -26,6 +26,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - CVCalendar (1.4.0)
   - FBSDKCoreKit (4.16.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.16.0):
@@ -47,6 +48,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
+  - CVCalendar (~> 1.4.0)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -69,6 +71,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CVCalendar: ec1a06a508f99d8e5067258754f811a8a1433a3f
   FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
   FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
@@ -79,6 +82,6 @@ SPEC CHECKSUMS:
   ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
   SmileLock: 748bc15066337721fa655f4cf3184919b7f0c40a
 
-PODFILE CHECKSUM: 90423723240a754e5a62bb9ed06d62b667b53e33
+PODFILE CHECKSUM: c8ce3d88f4b638e9300d25964488aedcda987981
 
 COCOAPODS: 1.0.1

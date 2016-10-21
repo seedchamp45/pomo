@@ -3,6 +3,7 @@ use_frameworks!
 
 target ‘pomo’ do
   pod 'AFNetworking', '~> 2.6'
+pod 'CVCalendar', '~> 1.4.0'
   pod 'ORStackView', '~> 3.0'
  # pod 'SwiftyJSON', '~> 2.3'
   pod 'FBSDKCoreKit'

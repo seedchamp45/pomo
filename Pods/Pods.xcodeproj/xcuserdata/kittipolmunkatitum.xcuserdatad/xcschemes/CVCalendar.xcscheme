@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F39C84798AB7B37E2522F5BBD4F18D65'
-               BlueprintName = 'GoogleMapsDirections'
+               BlueprintIdentifier = 'E5AB88E8333B9568826C9AA252037278'
+               BlueprintName = 'CVCalendar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'GoogleMapsDirections.framework'>
+               BuildableName = 'CVCalendar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

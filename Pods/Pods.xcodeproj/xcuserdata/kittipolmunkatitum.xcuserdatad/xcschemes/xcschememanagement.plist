@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CVCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,12 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4091AD339EE013697EADF7AF3D608111</key>
+		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4878C70B21CA37D7CB8A476BF986741B</key>
+		<key>4D72253B6D35ABDF17B2EEFEF9319CBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,6 +92,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9FD32E8C3E3CC33A026A182D5A596AED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A34CA2CDCA33A9CF24A09EA980F8EDEE</key>
 		<dict>
 			<key>primary</key>
@@ -97,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE309D8916ED88CFDD14DABE3CAEC93C</key>
+		<key>E5AB88E8333B9568826C9AA252037278</key>
 		<dict>
 			<key>primary</key>
 			<true/>
