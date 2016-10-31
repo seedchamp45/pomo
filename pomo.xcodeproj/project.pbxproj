@@ -21,6 +21,9 @@
 		1D9831AE1DAE833200755621 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831AB1DAE833200755621 /* Conversation.swift */; };
 		1D9831B31DAE83E700755621 /* InitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B11DAE83E700755621 /* InitalTableViewController.swift */; };
 		1D9831B41DAE83E700755621 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */; };
+		1D9C317B1DC25A3D00A5554C /* AlarmSoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C317A1DC25A3D00A5554C /* AlarmSoundHelper.swift */; };
+		1D9C317E1DC2690F00A5554C /* alarm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1D9C317D1DC2690F00A5554C /* alarm.m4a */; };
+		1D9C31911DC5F18100A5554C /* mapboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C31901DC5F18100A5554C /* mapboxViewController.swift */; };
 		1DED49441DB131A000153BBD /* PXGoogleDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49311DB131A000153BBD /* PXGoogleDirections.swift */; };
 		1DED49451DB131A000153BBD /* PXGoogleDirectionsDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49321DB131A000153BBD /* PXGoogleDirectionsDistance.swift */; };
 		1DED49461DB131A000153BBD /* PXGoogleDirectionsDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED49331DB131A000153BBD /* PXGoogleDirectionsDuration.swift */; };
@@ -122,6 +125,9 @@
 		1D9831AB1DAE833200755621 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		1D9831B11DAE83E700755621 /* InitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitalTableViewController.swift; sourceTree = "<group>"; };
 		1D9831B21DAE83E700755621 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1D9C317A1DC25A3D00A5554C /* AlarmSoundHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSoundHelper.swift; sourceTree = "<group>"; };
+		1D9C317D1DC2690F00A5554C /* alarm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.m4a; sourceTree = "<group>"; };
+		1D9C31901DC5F18100A5554C /* mapboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapboxViewController.swift; sourceTree = "<group>"; };
 		1DED49311DB131A000153BBD /* PXGoogleDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirections.swift; sourceTree = "<group>"; };
 		1DED49321DB131A000153BBD /* PXGoogleDirectionsDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsDistance.swift; sourceTree = "<group>"; };
 		1DED49331DB131A000153BBD /* PXGoogleDirectionsDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PXGoogleDirectionsDuration.swift; sourceTree = "<group>"; };
@@ -362,10 +368,12 @@
 				F114EF2A1DADBC74009842B4 /* inClassModeViewController.swift */,
 				F114EF2C1DADBCA4009842B4 /* PedometerViewController.swift */,
 				F114EF2E1DADBCF6009842B4 /* takeMeHomeViewController.swift */,
+				1D9C31901DC5F18100A5554C /* mapboxViewController.swift */,
 				1D7B9BF81DB65CB3001BE917 /* WebViewController.swift */,
 				1DED495B1DB1F4A700153BBD /* take mt home */,
 				1DED49561DB131A900153BBD /* direction */,
 				F114EF301DADBD29009842B4 /* MosquitoViewController.swift */,
+				1D9C317A1DC25A3D00A5554C /* AlarmSoundHelper.swift */,
 				F114EF321DADBD5E009842B4 /* BTSafetyAreaViewController.swift */,
 				F114EF341DADBD89009842B4 /* watchQRCodeViewController.swift */,
 				F114EF361DADBDE2009842B4 /* settingsViewController.swift */,
@@ -400,6 +408,7 @@
 			children = (
 				F15B7A921DA8D67100A663D9 /* AppDelegate.swift */,
 				F15B7A961DA8D67100A663D9 /* Main.storyboard */,
+				1D9C317D1DC2690F00A5554C /* alarm.m4a */,
 				F14B3EB31DA9116500C5EBA2 /* loginClasses */,
 				F14B3EAA1DA903C200C5EBA2 /* BaseClasses */,
 				F14B3EC01DA9260800C5EBA2 /* HomeClasses */,
@@ -546,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15B7AA01DA8D67100A663D9 /* LaunchScreen.storyboard in Resources */,
+				1D9C317E1DC2690F00A5554C /* alarm.m4a in Resources */,
 				F15B7A9D1DA8D67100A663D9 /* Assets.xcassets in Resources */,
 				F15B7A981DA8D67100A663D9 /* Main.storyboard in Resources */,
 			);
@@ -653,6 +663,7 @@
 				1D4B8ABA1DAEAA000056C8FC /* ToggleTorchButton.swift in Sources */,
 				F114EF2D1DADBCA4009842B4 /* PedometerViewController.swift in Sources */,
 				F14B3ED01DA9386600C5EBA2 /* GroupChatViewController.swift in Sources */,
+				1D9C317B1DC25A3D00A5554C /* AlarmSoundHelper.swift in Sources */,
 				F14B3EB71DA912B100C5EBA2 /* enterPasswordViewController.swift in Sources */,
 				1DED494C1DB131A000153BBD /* PXGoogleDirectionsRouteLegStep.swift in Sources */,
 				F114EF271DADBB26009842B4 /* familyViewController.swift in Sources */,
@@ -667,6 +678,7 @@
 				1DED495A1DB1F4A200153BBD /* WaypointViewController.swift in Sources */,
 				F114EF001DABCECD009842B4 /* loginEmailContoller.swift in Sources */,
 				1DED49481DB131A000153BBD /* PXGoogleDirectionsResponse.swift in Sources */,
+				1D9C31911DC5F18100A5554C /* mapboxViewController.swift in Sources */,
 				F114EF351DADBD89009842B4 /* watchQRCodeViewController.swift in Sources */,
 				1DED49471DB131A000153BBD /* PXGoogleDirectionsEnums.swift in Sources */,
 				1DED49541DB131A000153BBD /* PXTime.swift in Sources */,

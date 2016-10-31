@@ -2,30 +2,19 @@ platform :ios, ‘9.0’
 use_frameworks!
 
 target ‘pomo’ do
-  pod 'AFNetworking', '~> 2.6'
-pod 'CVCalendar', '~> 1.4.0'
-  pod 'ORStackView', '~> 3.0'
- # pod 'SwiftyJSON', '~> 2.3'
-  pod 'FBSDKCoreKit'
-pod 'FBSDKShareKit'
-pod 'FBSDKLoginKit'
-#pod 'SwiftQRCode'
-pod 'SmileLock’, ‘~>1.0’
-# pod 'QRCodeReader.swift', '~> 7.0.1'
+  	pod 'AFNetworking', '~> 2.6'
+	pod 'CVCalendar', '~> 1.4.0'
+  	pod 'ORStackView', '~> 3.0'
+	pod 'FBSDKCoreKit'
+	pod 'FBSDKShareKit'
+	pod 'FBSDKLoginKit'
+	pod 'SmileLock’, ‘~>1.0’
+	pod 'GoogleMaps'
+	pod 'GooglePlaces'
+	pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
+	pod ‘AlarmKit’
+	 pod 'Mapbox-iOS-SDK', '~> 3.3.4'
+	pod 'MapboxDirections.swift', :git => 'https://github.com/mapbox/MapboxDirections.swift.git', :tag => 'v0.6.0'
+	pod 'MapboxStatic.swift', :git => 'https://github.com/mapbox/MapboxStatic.swift.git', :tag => 'v0.6.0'
 
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
-pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
-#pod ‘QRCodeReader.swift’, ‘~>6.2.0’
-#pod 'Chatto', '= 2.1.0'
-#pod 'ChattoAdditions', '= 2.1.0'
-#pod "SlackTextViewController"
-#pod 'CVCalendar', '~> 1.4.0'
-#pod 'FSCalendar'
-#pod "AlarmKit"
-#pod "NMPopUpViewSwift"
-#pod 'STZPopupView'
-#pod 'CNPPopupController'
-#pod 'PopupController'
-#pod 'PopupDialog', :git => 'https://github.com/Orderella/PopupDialog.git', :tag => '0.4.0'
 end
